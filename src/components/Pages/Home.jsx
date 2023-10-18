@@ -149,7 +149,7 @@ export default function Home() {
       <Div>
         <Div className="container">
           <SectionHeading
-            title="Portfolio to explore"
+            title="Portfolio to exploree"
             subtitle="Latest Projects"
             variant="cs-style1 text-center"
           />
