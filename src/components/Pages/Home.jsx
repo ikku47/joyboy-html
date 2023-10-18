@@ -1,53 +1,53 @@
-import React, { useEffect } from 'react';
-import Card from '../Card';
-import FunFact from '../FunFact';
-import Hero from '../Hero';
-import Div from '../Div';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
-import Cta from '../Cta';
-import LogoList from '../LogoList';
-import MovingText from '../MovingText';
-import PortfolioSlider from '../Slider/PortfolioSlider';
-import PostSlider from '../Slider/PostSlider';
-import TestimonialSlider from '../Slider/TestimonialSlider';
-import TeamSlider from '../Slider/TeamSlider';
-import VideoModal from '../VideoModal';
-import TimelineSlider from '../Slider/TimelineSlider';
-import { pageTitle } from '../../helper';
+import React, { useEffect } from "react";
+import Card from "../Card";
+import FunFact from "../FunFact";
+import Hero from "../Hero";
+import Div from "../Div";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
+import Cta from "../Cta";
+import LogoList from "../LogoList";
+import MovingText from "../MovingText";
+import PortfolioSlider from "../Slider/PortfolioSlider";
+import PostSlider from "../Slider/PostSlider";
+import TestimonialSlider from "../Slider/TestimonialSlider";
+import TeamSlider from "../Slider/TeamSlider";
+import VideoModal from "../VideoModal";
+import TimelineSlider from "../Slider/TimelineSlider";
+import { pageTitle } from "../../helper";
 
 export default function Home() {
-  pageTitle('Home');
+  pageTitle("Home");
 
   // Hero Social Links
   const heroSocialLinks = [
     {
-      name: 'Behance',
-      links: '/',
+      name: "Behance",
+      links: "/",
     },
     {
-      name: 'Twitter',
-      links: '/',
+      name: "Twitter",
+      links: "/",
     },
   ];
 
   // FunFact Data
   const funfaceData = [
     {
-      title: 'Global Happy Clients',
-      factNumber: '40K',
+      title: "Joyful Clients",
+      factNumber: "52",
     },
     {
-      title: 'Project Completed',
-      factNumber: '50K',
+      title: "Jobs Completed",
+      factNumber: "118",
     },
     {
-      title: 'Team Members',
-      factNumber: '245',
+      title: "Team Members",
+      factNumber: "22",
     },
     {
-      title: 'Digital products',
-      factNumber: '550',
+      title: "Digital products",
+      factNumber: "16",
     },
   ];
 
@@ -59,13 +59,13 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero
-        title="Creativity In <br/>Our Blood Line"
-        subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
-        btnText="Get a Quote"
+        title="Reimagine your digital possibilities"
+        subtitle="Web2 to Web3, App Development, UI/UX Design, and AI: We've Got It All, Infused with Joy!"
+        btnText="Talk to us"
         btnLink="/contact"
         scrollDownId="#service"
-        socialLinksHeading="Follow Us"
-        heroSocialLinks={heroSocialLinks}
+        // socialLinksHeading="Follow Us"
+        // heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/hero_bg.jpeg"
       />
       {/* End Hero Section */}
@@ -74,8 +74,8 @@ export default function Home() {
       <div className="container">
         <FunFact
           variant="cs-type1"
-          title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+          title="<Dev> agency like 'no other'"
+          subtitle="Discover the Future with Joyboy: Leading the Way in Web2 to Web3, Mobile App Development, UI/UX Design, and AI Solutions"
           data={funfaceData}
         />
       </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="UI/UX design"
+                    title="Mobile App Development"
                     link="/service/service-details"
                     src="/images/service_1.jpeg"
                     alt="Service"
@@ -110,7 +110,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="React.js Development"
+                    title="UI/UX Design"
                     link="/service/service-details"
                     src="/images/service_2.jpeg"
                     alt="Service"
@@ -119,7 +119,7 @@ export default function Home() {
                 </Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Digital Marketing"
+                    title="Web Development"
                     link="/service/service-details"
                     src="/images/service_3.jpeg"
                     alt="Service"
@@ -129,7 +129,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Technology"
+                    title="Web3"
                     link="/service/service-details"
                     src="/images/service_4.jpeg"
                     alt="Service"
@@ -160,8 +160,8 @@ export default function Home() {
       {/* End Portfolio Section */}
 
       {/* Start Awards Section */}
-      <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_2">
+      {/* <Spacing lg="150" md="80" /> */}
+      {/* <Div className="cs-shape_wrap_2">
         <Div className="cs-shape_2">
           <Div />
         </Div>
@@ -180,7 +180,7 @@ export default function Home() {
             </Div>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
       {/* End Awards Section */}
 
       {/* Start Video Block Section */}
