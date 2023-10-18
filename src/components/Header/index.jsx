@@ -66,7 +66,7 @@ export default function Header({ variant }) {
                               to="creative-portfolio"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Creative Portfolio
+                              Creative Portfolio2
                             </Link>
                           </li>
                           <li>
