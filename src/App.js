@@ -3,6 +3,7 @@ import AboutPage from './components/Pages/AboutPage';
 import BlogPage from './components/Pages/BlogPage';
 import BlogDetailsPage from './components/Pages/BlogDetailsPage';
 import ContactPage from './components/Pages/ContactPage';
+import WallifyPage from './components/Pages/Wallify';
 import ErrorPage from './components/Pages/ErrorPage';
 import Home from './components/Pages/Home';
 import PortfolioDetailsPage from './components/Pages/PortfolioDetailsPage';
@@ -47,6 +48,7 @@ function App() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="wallify" element={<WallifyPage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="team/:teamDetails" element={<TeamDetails />} />
           <Route
