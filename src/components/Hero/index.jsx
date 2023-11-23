@@ -1,9 +1,10 @@
-import React from 'react';
-import parse from 'html-react-parser';
-import './hero.scss';
-import Button from '../Button';
-import Div from '../Div';
-import VerticalLinks from '../VerticalLinks';
+import React from "react";
+import parse from "html-react-parser";
+import "./hero.scss";
+import Button from "../Button";
+import Div from "../Div";
+import VerticalLinks from "../VerticalLinks";
+import WebGLComponent from "../WebGL/WebGL";
 
 export default function Hero({
   title,
@@ -13,13 +14,14 @@ export default function Hero({
   scrollDownId,
   socialLinksHeading,
   heroSocialLinks,
-  bgImageUrl,
+  bgImageUrl
 }) {
   return (
     <Div
       className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"
       style={{ backgroundImage: `url(${bgImageUrl})` }}
     >
+      <div>Text</div>
       <Div className="cs-shape_1" />
       <Div className="cs-shape_1" />
       <Div className="cs-shape_1" />
@@ -40,6 +42,7 @@ export default function Hero({
       <a href={scrollDownId} className="cs-down_btn">
         .
       </a>
+      <WebGLComponent />
     </Div>
   );
 }

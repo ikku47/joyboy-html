@@ -23,32 +23,32 @@ export default function Home() {
   const heroSocialLinks = [
     {
       name: "Behance",
-      links: "/",
+      links: "/"
     },
     {
       name: "Twitter",
-      links: "/",
-    },
+      links: "/"
+    }
   ];
 
   // FunFact Data
   const funfaceData = [
     {
       title: "Joyful Clients",
-      factNumber: "52",
+      factNumber: "52"
     },
     {
       title: "Jobs Completed",
-      factNumber: "118",
+      factNumber: "118"
     },
     {
       title: "Team Members",
-      factNumber: "22",
+      factNumber: "22"
     },
     {
       title: "Digital products",
-      factNumber: "16",
-    },
+      factNumber: "16"
+    }
   ];
 
   useEffect(() => {
@@ -64,10 +64,9 @@ export default function Home() {
         btnText="Talk to us"
         btnLink="/contact"
         scrollDownId="#service"
-        // socialLinksHeading="Follow Us"
-        // heroSocialLinks={heroSocialLinks}
-        bgImageUrl="/images/hero_bg.jpeg"
-      />
+      >
+        {/* Include the WebGLComponent here as the background */}
+      </Hero>
       {/* End Hero Section */}
 
       {/* Start FunFact Section */}
