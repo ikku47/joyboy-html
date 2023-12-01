@@ -1,15 +1,15 @@
-import { Icon } from '@iconify/react';
-import React, { useEffect } from 'react';
-import { pageTitle } from '../../helper';
-import Accordion from '../Accordion';
-import Button from '../Button';
-import Cta from '../Cta';
-import Div from '../Div';
-import PageHeading from '../PageHeading';
-import Spacing from '../Spacing';
+import { Icon } from "@iconify/react";
+import React, { useEffect } from "react";
+import { pageTitle } from "../../helper";
+import Accordion from "../Accordion";
+import Button from "../Button";
+import Cta from "../Cta";
+import Div from "../Div";
+import PageHeading from "../PageHeading";
+import Spacing from "../Spacing";
 
 export default function FaqPage() {
-  pageTitle('Frequently Asked Questions');
+  pageTitle("Frequently Asked Questions");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -81,7 +81,7 @@ export default function FaqPage() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let’s discuss & make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

@@ -1,58 +1,61 @@
-import React from 'react'
+import React from "react";
 import Slider from "react-slick";
-import Div from '../Div';
-import Post from '../Post';
+import Div from "../Div";
+import Post from "../Post";
 
 export default function PostSlider() {
   const postData = [
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_1.jpeg', 
-      alt:'Post', 
-      date:'07 Mar 2022', 
-      title:'How to keep fear from ruining your art business with confident'
+      url: "/blog/why-flutter",
+      src: "/images/post_1.jpeg",
+      alt: "Post",
+      date: "01 Dec 2023",
+      title:
+        "Elevating Mobile App Magic: Why Flutter Reigns Supreme in Dubai's Thriving Tech Market"
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_2.jpeg', 
-      alt:'Post', 
-      date:'10 Feb 2022',
-      title:'Artistic mind will be great for creation anything'
+      url: "/blog/blog-details",
+      src: "/images/post_2.jpeg",
+      alt: "Post",
+      date: "01 Dec 2023",
+      title: "Evolution of UI Trends: A Journey Through Time"
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_3.jpeg', 
-      alt:'Post', 
-      date:'05 Mar 2022',
-      title:'A.I will take over all job for human within next year'
+      url: "/blog/why-flutter",
+      src: "/images/post_1.jpeg",
+      alt: "Post",
+      date: "01 Dec 2023",
+      title:
+        "Elevating Mobile App Magic: Why Flutter Reigns Supreme in Dubai's Thriving Tech Market"
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_1.jpeg', 
-      alt:'Post', 
-      date:'07 Mar 2022', 
-      title:'How to keep fear from ruining your art business with confident'
+      url: "/blog/blog-details",
+      src: "/images/post_2.jpeg",
+      alt: "Post",
+      date: "01 Dec 2023",
+      title: "Evolution of UI Trends: A Journey Through Time"
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_2.jpeg', 
-      alt:'Post', 
-      date:'10 Feb 2022',
-      title:'Artistic mind will be great for creation anything'
+      url: "/blog/why-flutter",
+      src: "/images/post_1.jpeg",
+      alt: "Post",
+      date: "01 Dec 2023",
+      title:
+        "Elevating Mobile App Magic: Why Flutter Reigns Supreme in Dubai's Thriving Tech Market"
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_3.jpeg', 
-      alt:'Post', 
-      date:'05 Mar 2022',
-      title:'A.I will take over all job for human within next year'
+      url: "/blog/blog-details",
+      src: "/images/post_2.jpeg",
+      alt: "Post",
+      date: "01 Dec 2023",
+      title: "Evolution of UI Trends: A Journey Through Time"
     }
-  ]
-  
+  ];
+
   /** Slider Settings **/
   const settings = {
     dots: false,
-    arrows:false,
+    arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -69,13 +72,13 @@ export default function PostSlider() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2
         }
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2
         }
       },
       {
@@ -88,18 +91,18 @@ export default function PostSlider() {
   };
 
   return (
-    <Slider {...settings} className='cs-gap-24'>
-      {postData.map((item,index)=>(
-          <Div key={index}>
-            <Post 
-              url={item.url}
-              src={item.src} 
-              alt={item.alt} 
-              date={item.date}
-              title={item.title}
-            />
-          </Div>
-        ))}
+    <Slider {...settings} className="cs-gap-24">
+      {postData.map((item, index) => (
+        <Div key={index}>
+          <Post
+            url={item.url}
+            src={item.src}
+            alt={item.alt}
+            date={item.date}
+            title={item.title}
+          />
+        </Div>
+      ))}
     </Slider>
-  )
+  );
 }

@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+## Basic Color
+----------------------------------------------------------------*/
+.cs-iconbox_3_list {
+  position: relative;
+  padding-left: 550px;
+  min-height: 640px;
+}
+.cs-iconbox_3_list > *:not(:last-child) {
+  border-bottom: 1px solid #4D4D4D;
+}
+.cs-iconbox_3_list .cs-image_layer {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  pointer-events: none;
+  max-width: 416px;
+  height: 600px;
+}
+.cs-iconbox_3_list .cs-image_layer .cs-image_layer_in {
+  height: 100%;
+  width: 100%;
+}
+.cs-iconbox_3_list .cs-image_layer img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
+  animation: inactiveImageAnimation1 0.6s forwards ease;
+}
+.cs-iconbox_3_list .cs-hover_tab.active .cs-image_layer img {
+  animation: activeImageAnimation1 0.6s forwards ease;
+}
+.cs-iconbox_3_list .cs-hover_tab.active .cs-iconbox_icon {
+  color: #fff;
+  background-color: #FF4A17;
+  border-color: #FF4A17;
+}
+@media (max-width: 1199px) {
+  .cs-iconbox_3_list {
+    padding-left: 460px;
+  }
+}
+@media (max-width: 991px) {
+  .cs-iconbox_3_list {
+    padding-left: 0;
+    padding-top: 650px;
+  }
+  .cs-iconbox_3_list .cs-image_layer {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.cs-iconbox.cs-style3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  color: rgba(254, 254, 254, 0.7);
+}
+.cs-iconbox.cs-style3 .cs-iconbox_in {
+  margin-right: 30px;
+  max-width: 480px;
+}
+.cs-iconbox.cs-style3 .cs-iconbox_icon {
+  color: #999696;
+  border: 2px solid #999696;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  flex: none;
+  transition: all 0.3s ease;
+}
+.cs-iconbox.cs-style3 .cs-iconbox_icon:hover {
+  color: #fff;
+  background-color: #FF4A17;
+  border-color: #FF4A17;
+}
+.cs-iconbox.cs-style3 .cs-iconbox_title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.cs-iconbox.cs-style3 .cs-iconbox_subtitle {
+  line-height: 1.75em;
+}
+.cs-iconbox.cs-style3:hover .cs-iconbox_icon {
+  color: #fff;
+  background-color: #FF4A17;
+  border-color: #FF4A17;
+}
+@media (max-width: 991px) {
+  .cs-iconbox.cs-style3 .cs-iconbox_title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .cs-iconbox.cs-style3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cs-iconbox.cs-style3 .cs-iconbox_icon {
+    position: initial;
+    transform: initial;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+  }
+  .cs-iconbox.cs-style3 .cs-iconbox_icon svg {
+    max-height: 22px;
+  }
+}
+
+@keyframes inactiveImageAnimation1 {
+  0% {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+}
+@keyframes activeImageAnimation1 {
+  0% {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}/*# sourceMappingURL=servicelist.css.map */

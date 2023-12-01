@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import AboutPage from "./components/Pages/AboutPage";
 import BlogPage from "./components/Pages/BlogPage";
 import BlogDetailsPage from "./components/Pages/BlogDetailsPage";
+import BlogWhyFlutter from "./components/Pages/WhyFlutter";
+import BlogUiTrends from "./components/Pages/UiTrends";
 import ContactPage from "./components/Pages/ContactPage";
 import WallifyPage from "./components/Pages/Wallify";
 import ErrorPage from "./components/Pages/ErrorPage";
@@ -46,7 +48,9 @@ function App() {
             element={<PortfolioDetailsPage />}
           />
           <Route path="blog" element={<BlogPage />} />
-          <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
+          {/* <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} /> */}
+          <Route path="blog/why-flutter" element={<BlogWhyFlutter />} />
+          <Route path="blog/ui-trends" element={<BlogUiTrends />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="wallify" element={<WallifyPage />} />
           <Route path="team" element={<TeamPage />} />

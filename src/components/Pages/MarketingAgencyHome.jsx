@@ -1,52 +1,52 @@
-import React, { useEffect } from 'react';
-import Cta from '../Cta';
-import Div from '../Div';
-import Hero5 from '../Hero/Hero5';
-import LogoList from '../LogoList';
-import MovingText from '../MovingText';
-import Spacing from '../Spacing';
-import VideoModal from '../VideoModal';
-import { pageTitle } from '../../helper';
-import PostSlider from '../Slider/PostSlider';
-import SectionHeading from '../SectionHeading';
-import TestimonialSlider from '../Slider/TestimonialSlider';
-import PricingTableList from '../PricingTable/PricingTableList';
-import FunFact2 from '../FunFact/FunFact2';
-import PortfolioSlider2 from '../Slider/PortfolioSlider2';
-import ServiceList from '../ServiceList';
+import React, { useEffect } from "react";
+import Cta from "../Cta";
+import Div from "../Div";
+import Hero5 from "../Hero/Hero5";
+import LogoList from "../LogoList";
+import MovingText from "../MovingText";
+import Spacing from "../Spacing";
+import VideoModal from "../VideoModal";
+import { pageTitle } from "../../helper";
+import PostSlider from "../Slider/PostSlider";
+import SectionHeading from "../SectionHeading";
+import TestimonialSlider from "../Slider/TestimonialSlider";
+import PricingTableList from "../PricingTable/PricingTableList";
+import FunFact2 from "../FunFact/FunFact2";
+import PortfolioSlider2 from "../Slider/PortfolioSlider2";
+import ServiceList from "../ServiceList";
 
 export default function MarketingAgencyHome() {
-  pageTitle('Marketing Agency');
+  pageTitle("Marketing Agency");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const heroSocialLinks = [
     {
-      name: 'Behance',
-      links: '/',
+      name: "Behance",
+      links: "/"
     },
     {
-      name: 'Twitter',
-      links: '/',
-    },
+      name: "Twitter",
+      links: "/"
+    }
   ];
   const funfaceData = [
     {
-      title: 'Digital products',
-      factNumber: '550',
+      title: "Digital products",
+      factNumber: "550"
     },
     {
-      title: 'Global happy clients',
-      factNumber: '40K',
+      title: "Global happy clients",
+      factNumber: "40K"
     },
     {
-      title: 'Project completed',
-      factNumber: '50k',
+      title: "Project completed",
+      factNumber: "50k"
     },
     {
-      title: 'Team members',
-      factNumber: '250',
-    },
+      title: "Team members",
+      factNumber: "250"
+    }
   ];
   return (
     <>
@@ -167,7 +167,7 @@ export default function MarketingAgencyHome() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let’s discuss & make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg_3.jpeg"
