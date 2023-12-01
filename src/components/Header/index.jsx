@@ -38,7 +38,7 @@ export default function Header({ variant }) {
               </Div>
               <Div className="cs-main_header_center">
                 <Div className="cs-nav cs-primary_font cs-medium">
-                  <ul
+                  {/* <ul
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? "block" : "none"}` }}
                   >
@@ -222,7 +222,7 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                  </ul>
+                  </ul> */}
                   <span
                     className={
                       mobileToggle

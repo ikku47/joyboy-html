@@ -81,7 +81,7 @@ export default function Home() {
       {/* End FunFact Section */}
 
       {/* Start Service Section */}
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" />
       <Div id="service">
         <Div className="container">
           <Div className="row">
@@ -140,11 +140,11 @@ export default function Home() {
             </Div>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
       {/* End Service Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="150" md="50" />
+      {/* <Spacing lg="150" md="50" />
       <Div>
         <Div className="container">
           <SectionHeading
@@ -155,7 +155,7 @@ export default function Home() {
           <Spacing lg="90" md="45" />
         </Div>
         <PortfolioSlider />
-      </Div>
+      </Div> */}
       {/* End Portfolio Section */}
 
       {/* Start Awards Section */}
@@ -183,7 +183,7 @@ export default function Home() {
       {/* End Awards Section */}
 
       {/* Start Video Block Section */}
-      <Spacing lg="130" md="70" />
+      {/* <Spacing lg="130" md="70" />
       <Div className="container">
         <h2 className="cs-font_50 cs-m0 text-center cs-line_height_4">
           Our agile process is ability to adapt and respond to change. Agile
@@ -194,7 +194,7 @@ export default function Home() {
           videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
           bgUrl="/images/video_bg.jpeg"
         />
-      </Div>
+      </Div> */}
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
@@ -212,7 +212,7 @@ export default function Home() {
       {/* End Team Section */}
 
       {/* Start Testimonial Section */}
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
       {/* End Testimonial Section */}
 
       {/* Start Blog Section */}
