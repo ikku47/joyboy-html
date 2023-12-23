@@ -81,7 +81,7 @@ export default function Home() {
       {/* End FunFact Section */}
 
       {/* Start Service Section */}
-      {/* <Spacing lg="150" md="80" />
+      <Spacing lg="150" md="80" />
       <Div id="service">
         <Div className="container">
           <Div className="row">
@@ -140,11 +140,11 @@ export default function Home() {
             </Div>
           </Div>
         </Div>
-      </Div> */}
+      </Div>
       {/* End Service Section */}
 
       {/* Start Portfolio Section */}
-      {/* <Spacing lg="150" md="50" />
+      <Spacing lg="150" md="50" />
       <Div>
         <Div className="container">
           <SectionHeading
@@ -155,7 +155,7 @@ export default function Home() {
           <Spacing lg="90" md="45" />
         </Div>
         <PortfolioSlider />
-      </Div> */}
+      </Div>
       {/* End Portfolio Section */}
 
       {/* Start Awards Section */}
