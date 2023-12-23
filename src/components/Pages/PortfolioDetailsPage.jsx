@@ -26,16 +26,16 @@ export default function PortfolioDetailsPage() {
     <>
       <PageHeading
         title={currentItem.title}
-        bgSrc="/images/service_hero_bg.jpeg"
+        bgSrc={currentItem.src}
         pageLinkText={params.portfolioDetailsId}
       />
       <Spacing lg="150" md="80" />
       <Div className="container">
-        <img
+        {/* <img
           src={currentItem.src}
           alt="Details"
           className="cs-radius_15 w-100"
-        />
+        /> */}
         <Spacing lg="90" md="40" />
         <Div className="row">
           <Div className="col-lg-6">
