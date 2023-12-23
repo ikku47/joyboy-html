@@ -1,41 +1,17 @@
 import React from "react";
+import projects from "../../json/projects.json";
 import Portfolio from "../Portfolio";
 import Div from "../Div";
 import Slider from "react-slick";
 
 export default function PortfolioSlider() {
-  const portfolioData = [
-    {
-      title: "Web Development",
-      subtitle: "See Details",
-      href: "/portfolio/portfolio-details",
-      src: "/images/portfolio_1.jpeg",
-    },
-    {
-      title: "App Development",
-      subtitle: "See Details",
-      href: "/portfolio/portfolio-details",
-      src: "/images/portfolio_2.jpeg",
-    },
-    {
-      title: "3D Design",
-      subtitle: "See Details",
-      href: "/portfolio/portfolio-details",
-      src: "/images/portfolio_0.jpg",
-    },
-    {
-      title: "UI/UX Design",
-      subtitle: "See Details",
-      href: "/portfolio/portfolio-details",
-      src: "/images/portfolio_3.jpeg",
-    },
-  ];
-
   /** Slider Settings **/
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
+    autoplay: true,
+    autoplay: 1200,
     centerPadding: "0",
     slidesToShow: 3,
     speed: 500,
@@ -45,15 +21,15 @@ export default function PortfolioSlider() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   return (
     <Slider {...settings} className="cs-slider cs-style3 cs-gap-24">
-      {portfolioData.map((item, index) => (
+      {projects.map((item, index) => (
         <Div key={index}>
           <Portfolio
             title={item.title}
