@@ -53,13 +53,23 @@ class WebGLComponent extends Component {
           <Div className="cs-shape_1" />
           <Div className="container">
             <Div className="cs-hero_text">
-              <h1 className="cs-hero_title">{parse(title)}</h1>
+              <h1
+                className="cs-hero_title user-select-none"
+                style={{ userSelect: "none" }}
+              >
+                {parse(title)}
+              </h1>
               <Div className="cs-hero_info">
                 <Div>
                   <Button btnLink={btnLink} btnText={btnText} />
                 </Div>
                 <Div>
-                  <Div className="cs-hero_subtitle">{subtitle}</Div>
+                  <Div
+                    className="cs-hero_subtitle"
+                    style={{ userSelect: "none" }}
+                  >
+                    {subtitle}
+                  </Div>
                 </Div>
               </Div>
             </Div>

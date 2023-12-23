@@ -1,74 +1,74 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
-import Slider from 'react-slick';
-import Div from '../Div';
-import Team from '../Team';
+import { Icon } from "@iconify/react";
+import React from "react";
+import Slider from "react-slick";
+import Div from "../Div";
+import Team from "../Team";
 
 export default function TeamSlider() {
   /** Team Member Data **/
   const teamData = [
     {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberImage: "/images/team/ikku.png",
+      memberName: "Melon Bulgery",
+      memberDesignation: "Product Designer",
       memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
     },
     {
-      memberImage: '/images/member_2.jpeg',
-      memberName: 'Olinaz Fushi',
-      memberDesignation: 'Product Designer',
+      memberImage: "/images/team/ikku.png",
+      memberName: "Olinaz Fushi",
+      memberDesignation: "Product Designer",
       memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
     },
     {
-      memberImage: '/images/member_3.jpeg',
-      memberName: 'David Elone',
-      memberDesignation: 'React Developer',
+      memberImage: "/images/member_3.jpeg",
+      memberName: "David Elone",
+      memberDesignation: "React Developer",
       memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
     },
     {
-      memberImage: '/images/member_4.jpeg',
-      memberName: 'Melina Opole',
-      memberDesignation: 'WP Developer',
+      memberImage: "/images/member_4.jpeg",
+      memberName: "Melina Opole",
+      memberDesignation: "WP Developer",
       memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
     },
     {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberImage: "/images/member_1.jpeg",
+      memberName: "Melon Bulgery",
+      memberDesignation: "Product Designer",
       memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    }
   ];
   /** Slider Settings **/
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <div
       {...props}
       className={
-        'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -80,8 +80,8 @@ export default function TeamSlider() {
     <div
       {...props}
       className={
-        'slick-next slick-arrow' +
-        (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
@@ -101,26 +101,26 @@ export default function TeamSlider() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-        },
+          slidesToShow: 3
+        }
       },
       {
         breakpoint: 991,
         settings: {
           slidesToShow: 2,
           dots: true,
-          arrows: false,
-        },
+          arrows: false
+        }
       },
       {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
           dots: true,
-          arrows: false,
-        },
-      },
-    ],
+          arrows: false
+        }
+      }
+    ]
   };
 
   return (
