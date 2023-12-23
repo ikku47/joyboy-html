@@ -31,8 +31,11 @@
     }
   }
   .cs-member_name {
-    font-size: 22px;
-    margin-bottom: 6px;
+    font-size: 14px;
+    margin: 0;
+  }
+  .cs-member_designation {
+    font-size: 12px;
   }
   .cs-member_info {
     position: absolute;
@@ -76,3 +79,4 @@
   font-size: 20px;
 }
 }
+

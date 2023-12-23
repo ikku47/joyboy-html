@@ -104,10 +104,11 @@ export default function TeamSlider() {
     autoplay: true,
     autoplaySpeed: 1200,
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
+    rows: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
     responsive: [
@@ -128,26 +129,39 @@ export default function TeamSlider() {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           dots: true,
-          arrows: false
+          arrows: false,
+          rows: 2,
         }
       }
     ]
   };
 
   return (
-    <Slider {...settings} className="cs-gap-24 cs-arrow_style2">
+    <Div><Slider {...settings} className="cs-gap-24 cs-arrow_style2">
+    {teamData.map((item, index) => (
+      <Div key={index}>
+        <Team
+          memberImage={item.memberImage}
+          memberName={item.memberName}
+          memberDesignation={item.memberDesignation}
+          memberSocial={item.memberSocial}
+        />
+      </Div>
+    ))}
+  </Slider>
+  {/* <div className="grid">
       {teamData.map((item, index) => (
-        <Div key={index}>
-          <Team
-            memberImage={item.memberImage}
-            memberName={item.memberName}
-            memberDesignation={item.memberDesignation}
-            memberSocial={item.memberSocial}
-          />
-        </Div>
+         <Team
+         memberImage={item.memberImage}
+         memberName={item.memberName}
+         memberDesignation={item.memberDesignation}
+         memberSocial={item.memberSocial}
+       />
       ))}
-    </Slider>
+    </div> */}
+  
+  </Div>
   );
 }

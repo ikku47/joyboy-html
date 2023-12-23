@@ -21,21 +21,6 @@ export default function Team({memberImage, memberName, memberDesignation, member
               <Icon icon="fa6-brands:linkedin-in" />                   
             </Link>
           )}
-          {memberSocial.twitter && (
-            <Link to={memberSocial.twitter}>
-              <Icon icon="fa-brands:twitter" />                                        
-            </Link>
-          )}
-          {memberSocial.youtube && (
-            <Link to={memberSocial.youtube}>
-              <Icon icon="fa-brands:youtube" />                     
-            </Link>
-          )}
-          {memberSocial.facebook && (
-            <Link to={memberSocial.facebook}>
-              <Icon icon="fa-brands:facebook-f" />                    
-            </Link>
-          )}
         </Div>
       </Div>
   )
