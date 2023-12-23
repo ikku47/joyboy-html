@@ -8,7 +8,7 @@ export default function TeamSlider() {
   /** Team Member Data **/
   const teamData = [
     {
-      memberImage: "/images/team/ikku.png",
+      memberImage: "/images/team/iqqu.png",
       memberName: "Melon Bulgery",
       memberDesignation: "Product Designer",
       memberSocial: {
@@ -19,40 +19,7 @@ export default function TeamSlider() {
       }
     },
     {
-      memberImage: "/images/team/ikku.png",
-      memberName: "Olinaz Fushi",
-      memberDesignation: "Product Designer",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/"
-      }
-    },
-    {
-      memberImage: "/images/member_3.jpeg",
-      memberName: "David Elone",
-      memberDesignation: "React Developer",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/"
-      }
-    },
-    {
-      memberImage: "/images/member_4.jpeg",
-      memberName: "Melina Opole",
-      memberDesignation: "WP Developer",
-      memberSocial: {
-        linkedin: "/",
-        twitter: "/",
-        youtube: "/",
-        facebook: "/"
-      }
-    },
-    {
-      memberImage: "/images/member_1.jpeg",
+      memberImage: "/images/team/ameer.png",
       memberName: "Melon Bulgery",
       memberDesignation: "Product Designer",
       memberSocial: {
@@ -61,7 +28,51 @@ export default function TeamSlider() {
         youtube: "/",
         facebook: "/"
       }
-    }
+    },
+    {
+      memberImage: "/images/team/faris.png",
+      memberName: "Melon Bulgery",
+      memberDesignation: "Product Designer",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/naveen.png",
+      memberName: "Melon Bulgery",
+      memberDesignation: "Product Designer",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/faiz.png",
+      memberName: "Melon Bulgery",
+      memberDesignation: "Product Designer",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/uvais.png",
+      memberName: "Melon Bulgery",
+      memberDesignation: "Product Designer",
+      memberSocial: {
+        linkedin: "/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
   ];
   /** Slider Settings **/
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -90,6 +101,8 @@ export default function TeamSlider() {
     </div>
   );
   const settings = {
+    autoplay: true,
+    autoplaySpeed: 1200,
     dots: false,
     infinite: true,
     speed: 500,
