@@ -97,40 +97,40 @@ export default function Home() {
             <Div className="col-xl-8">
               <Div className="row">
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                <Div className="col-lg-3 col-6">
                   <Card
                     title="Mobile App Development"
                     link="/service/service-details"
-                    src="/images/service_1.jpeg"
+                    src="/images/mobile.png"
                     alt="Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                <Div className="col-lg-3 col-6">
                   <Card
                     title="UI/UX Design"
                     link="/service/service-details"
-                    src="/images/service_2.jpeg"
+                    src="/images/ui.png"
                     alt="Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
-                <Div className="col-lg-3 col-sm-6">
+                <Div className="col-lg-3 col-6">
                   <Card
                     title="Web Development"
                     link="/service/service-details"
-                    src="/images/service_3.jpeg"
+                    src="/images/web.png"
                     alt="Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                <Div className="col-lg-3 col-6">
                   <Card
                     title="Web3"
                     link="/service/service-details"
-                    src="/images/service_4.jpeg"
+                    src="/images/web3.png"
                     alt="Service"
                   />
                   <Spacing lg="0" md="30" />
@@ -148,7 +148,7 @@ export default function Home() {
       <Div>
         <Div className="container">
           <SectionHeading
-            title="Portfolio to exploree"
+            title="Portfolio to explore"
             subtitle="Latest Projects"
             variant="cs-style1 text-center"
           />
@@ -202,7 +202,7 @@ export default function Home() {
       <Div className="container">
         <SectionHeading
           title="Crew Members"
-          subtitle="Our Team"
+          subtitle="Team"
           variant="cs-style1"
         />
         <Spacing lg="85" md="45" />

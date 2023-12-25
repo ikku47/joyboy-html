@@ -84,12 +84,12 @@
   line-height: 1.25em;
 }
 .cs-hero.cs-style1 .cs-hero_title span {
-  color: #FF4A17;
+  color: #ff4a17;
 }
 .cs-hero.cs-style1 .cs-hero_subtitle {
   font-size: 18px;
   line-height: 1.9em;
-  color: #FEFEFE;
+  color: #fefefe;
 }
 .cs-hero.cs-style1 .cs-hero_info {
   display: flex;
@@ -136,7 +136,7 @@
   margin-bottom: 40px;
 }
 .cs-hero.cs-style1.cs-type2 .cs-hero_title::first-letter {
-  color: #FF4A17;
+  color: #ff4a17;
 }
 .cs-hero.cs-style1.cs-type2 .cs-hero_social_wrap {
   transform: rotate(180deg) translateY(50%);
@@ -193,7 +193,7 @@
   width: 0%;
   left: 0;
   top: 50%;
-  background-color: #FF4A17;
+  background-color: #ff4a17;
   transition: all 0.4s ease;
 }
 .cs-hero.cs-style2 .cs-hero_tab_item .cs-hero_tab_img {
@@ -203,7 +203,7 @@
   height: 100%;
   width: 50%;
   -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0);
   pointer-events: none;
   animation: inactiveImageAnimation 1s forwards ease;
 }
@@ -235,7 +235,7 @@
 .cs-hero.cs-style3 .cs-hero_subtitle {
   font-size: 18px;
   line-height: 1.9em;
-  color: #FEFEFE;
+  color: #fefefe;
   max-width: 650px;
   margin-left: auto;
   margin-bottom: 95px;
@@ -264,12 +264,17 @@
   height: 626px;
   width: 626px;
   border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 74, 23, 0.8) 0%, rgba(255, 74, 23, 0) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 74, 23, 0.8) 0%,
+    rgba(255, 74, 23, 0) 100%
+  );
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 10%;
-  animation: 9s cubic-bezier(0.4, 0, 0.2, 1) 0s infinite normal none running light-mode;
+  animation: 9s cubic-bezier(0.4, 0, 0.2, 1) 0s infinite normal none running
+    light-mode;
 }
 
 .cs-hero.cs-style4,
@@ -284,7 +289,7 @@
   position: relative;
   z-index: 10;
   -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0);
   transition: all 0.7s ease;
 }
 .cs-hero.cs-style4 .cs-hero_title {
@@ -293,9 +298,9 @@
   font-size: 100px;
   position: relative;
   text-decoration: underline;
-  text-decoration-color: #FF4A17;
+  text-decoration-color: #ff4a17;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   text-decoration-thickness: 0.07em;
   text-underline-position: under;
   line-height: 1.4em;
@@ -328,7 +333,7 @@
 
 .swiper-slide-active .cs-hero.cs-style4 .cs-hero_text {
   -webkit-clip-path: inset(0 0% 0 0);
-          clip-path: inset(0 0% 0 0);
+  clip-path: inset(0 0% 0 0);
   transition-delay: 0.7s;
 }
 .swiper-slide-active .cs-hero.cs-style5 .cs-hero_text {
@@ -351,7 +356,7 @@
 }
 .cs-swiper_button_prev:hover,
 .cs-swiper_button_next:hover {
-  color: #FF4A17;
+  color: #ff4a17;
 }
 
 .cs-swiper_button_prev {
@@ -369,7 +374,8 @@
 }
 
 @keyframes UpAndDown {
-  0%, 100% {
+  0%,
+  100% {
     top: 30%;
   }
   50% {
@@ -381,21 +387,21 @@
 @keyframes inactiveImageAnimation {
   0% {
     -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
   100% {
     -webkit-clip-path: inset(0 0 0 100%);
-            clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
   }
 }
 @keyframes activeImageAnimation {
   0% {
     -webkit-clip-path: inset(0 100% 0 0);
-            clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
   }
   100% {
     -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
 }
 @media screen and (max-width: 1920px) {
@@ -707,4 +713,4 @@
   width: 100%;
   height: 100%;
   z-index: -1; /* This places the canvas behind other content */
-}/*# sourceMappingURL=hero.css.map */
+} /*# sourceMappingURL=hero.css.map */

@@ -7,21 +7,23 @@ import Slider from "react-slick";
 export default function PortfolioSlider() {
   /** Slider Settings **/
   const settings = {
-    className: "center",
     centerMode: true,
-    infinite: true,
+    infinite: false,
     autoplay: true,
     autoplay: 1200,
-    centerPadding: "0",
     slidesToShow: 3,
     speed: 500,
     dots: true,
     arrows: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 1
+          centerMode: false,
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+          rows: 2
         }
       }
     ]
@@ -34,7 +36,6 @@ export default function PortfolioSlider() {
           <Portfolio
             title={item.title}
             subtitle={item.subtitle}
-            href={item.href}
             src={item.src}
           />
         </Div>
