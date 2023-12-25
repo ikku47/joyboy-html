@@ -6,10 +6,11 @@
   display: flex;
   align-items: center;
   background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 60px 80px;
   position: relative;
   z-index: 1;
+
   .cs-funfact_shape {
     position: absolute;
     left: 0;
@@ -19,6 +20,12 @@
     border-radius: inherit;
     background-position: right bottom;
     background-repeat: no-repeat;
+    .video-container {
+      object-fit: cover;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+    }
   }
   .cs-funfact_left {
     flex: none;
@@ -49,7 +56,7 @@
 .cs-funfacts {
   display: grid;
   grid-gap: 36px 40px;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .cs-funfact.cs-style1 {
   display: flex;
@@ -115,7 +122,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: -12px;
-    >* {
+    > * {
       padding: 12px;
     }
   }
@@ -184,7 +191,7 @@
     width: 100%;
     margin-bottom: 50px;
   }
-  .cs-funfact_wrap_2 .cs-funfacts  {
+  .cs-funfact_wrap_2 .cs-funfacts {
     display: grid;
     grid-gap: 10px 25px;
   }

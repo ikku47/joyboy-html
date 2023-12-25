@@ -12,7 +12,7 @@ let config = {
   PRESSURE: 0.8,
   PRESSURE_ITERATIONS: 20,
   CURL: 30,
-  SPLAT_RADIUS: 0.25,
+  SPLAT_RADIUS: 0.1,
   SPLAT_FORCE: 6000,
   SHADING: true,
   COLORFUL: true,
@@ -1225,9 +1225,7 @@ multipleSplats(parseInt(Math.random() * 20) + 5);
 
 multipleSplats(parseInt(Math.random() * 20) + 5);
 
-setInterval(function () {
-  multipleSplats(parseInt(Math.random() * 20) + 5);
-}, 5000);
+setTimeout(startCircularMotion, 2000);
 
 let lastUpdateTime = Date.now();
 let colorUpdateTimer = 0.0;
@@ -1581,6 +1579,7 @@ function correctRadius(radius) {
 }
 
 canvas.addEventListener("mousedown", (e) => {
+  stopCircularMotion();
   let posX = scaleByPixelRatio(e.offsetX);
   let posY = scaleByPixelRatio(e.offsetY);
   let pointer = pointers.find((p) => p.id == -1);
@@ -1596,8 +1595,48 @@ canvas.addEventListener("mousemove", (e) => {
   updatePointerMoveData(pointer, posX, posY);
 });
 
+//
+// Define variables to control circular motion
+let centerX = canvas.width / 2; // X coordinate of the center
+let centerY = canvas.height / 2; // Y coordinate of the center
+let radius = 800; // Radius of the circular path
+let angle = 180; // Starting angle
+
+let animationFrameId = null;
+
+// Function to update circular motion
+function updateCircularMotion() {
+  let pointer = pointers[0];
+  let posX = centerX + Math.cos(angle) * radius;
+  let posY = centerY + Math.sin(angle) * radius;
+  updatePointerMoveData(pointer, posX, posY);
+
+  angle += 0.02;
+  angle = angle % (Math.PI * 2);
+
+  // Request the next frame to continue the animation
+  animationFrameId = requestAnimationFrame(updateCircularMotion);
+}
+
+// Function to start the circular motion
+function startCircularMotion() {
+  if (!animationFrameId) {
+    updateCircularMotion();
+  }
+}
+
+// Function to stop the circular motion
+function stopCircularMotion() {
+  if (animationFrameId) {
+    cancelAnimationFrame(animationFrameId);
+    animationFrameId = null;
+  }
+}
+
+//
 window.addEventListener("mouseup", () => {
   updatePointerUpData(pointers[0]);
+  startCircularMotion();
 });
 
 canvas.addEventListener("touchstart", (e) => {
@@ -1682,10 +1721,10 @@ function correctDeltaY(delta) {
 }
 
 function generateColor() {
-  let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-  c.r *= 0.3;
-  c.g *= 0.0;
-  c.b *= 0.03;
+  let c = HSVtoRGB(Math.random(), 0.5, 1.0);
+  c.r *= 0.08;
+  c.g *= 0.02;
+  c.b *= 0.2;
   return c;
 }
 

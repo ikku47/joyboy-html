@@ -36,14 +36,16 @@
   }
   .cs-member_designation {
     font-size: 12px;
+    margin: 0;
+    padding: 0;
   }
   .cs-member_info {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 3;
-    padding: 30px 25px;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // width: 100%;
+    // z-index: 3;
+    padding: 10px 10px;
   }
   .cs-member_social {
     position: absolute;
@@ -75,8 +77,10 @@
   }
 }
 @media screen and (max-width: 1380px) {
-.cs-team.cs-style1 .cs-member_name {
-  font-size: 20px;
+  .cs-team.cs-style1 .cs-member_name {
+    font-size: 20px;
+  }
+  .cs-member_designation {
+    height: 80px;
+  }
 }
-}
-

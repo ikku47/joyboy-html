@@ -6,10 +6,15 @@ import CountUp from "react-countup";
 export default function FunFact({ variant, title, subtitle, data }) {
   return (
     <Div className={variant ? `cs-funfact_wrap ${variant}` : "cs-funfact_wrap"}>
-      <Div
+      {/* <Div
         className="cs-funfact_shape"
         style={{ backgroundImage: "url(./images/funfact_shape_bg.svg)" }}
-      />
+      /> */}
+      <div className="cs-funfact_shape">
+        <video autoPlay loop muted className="video-container">
+          <source src="/bg1.webm" type="video/mp4" />
+        </video>
+      </div>
       <Div className="cs-funfact_left">
         <Div className="cs-funfact_heading">
           <h2>{title}</h2>
