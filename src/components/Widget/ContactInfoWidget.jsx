@@ -35,7 +35,7 @@ export default function ContactInfoWidget({ withIcon, title }) {
             ""
           )}
           Souq Warsan <br />
-          International City
+          International City, Dubai
         </li>
       </ul>
     </>

@@ -54,9 +54,9 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
               </Div>
             </Div>
             <Div className="col-lg-3 col-sm-6">
-              <Div className="cs-footer_item">
+              {/* <Div className="cs-footer_item">
                 <MenuWidget menuItems={serviceMenu} menuHeading="Services" />
-              </Div>
+              </Div> */}
             </Div>
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
@@ -75,13 +75,13 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
           </Div>
         </Div>
       </Div>
-      <Div className="container">
+      {/* <Div className="container">
         <Div className="cs-bottom_footer">
           <Div className="cs-bottom_footer_left">
             <Div className="cs-copyright">Copyright © 2023</Div>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
     </footer>
   );
 }

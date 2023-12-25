@@ -144,7 +144,7 @@ export default function Home() {
       {/* End Service Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="150" md="50" />
+      <Spacing lg="150" md="100" />
       <Div>
         <Div className="container">
           <SectionHeading

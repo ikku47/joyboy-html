@@ -19,7 +19,7 @@ export default function SectionHeading({
           ? `cs-section_heading ${variant}`
           : `cs-section_heading cs-style1`
       }
-      style={{ marginTop: "-70px" }}
+      style={{ marginTop: "-60px" }}
     >
       <h3 className="cs-section_subtitle">{parse(subtitle)}</h3>
       <h2 className="cs-section_title">{parse(title)}</h2>

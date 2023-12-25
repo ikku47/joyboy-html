@@ -14,7 +14,7 @@ export default function PortfolioSlider() {
     slidesToShow: 3,
     speed: 500,
     dots: true,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 800,
