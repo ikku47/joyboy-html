@@ -213,10 +213,18 @@ export default function Home() {
 
       {/* Start Testimonial Section */}
       {/* <TestimonialSlider /> */}
-      {/* End Testimonial Section */}
+      {/* End Testiw
+      
+      monial Section */}
 
       {/* Start Blog Section */}
-      <Spacing lg="150" md="80" />
+      <Spacing lg="50
+      
+      
+      
+      
+      
+      " md="80" />
       <Div className="cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>
@@ -225,7 +233,7 @@ export default function Home() {
             <Div className="col-xl-4">
               <SectionHeading
                 title="Explore recent publications"
-                subtitle="Our Blog"
+                subtitle="Blog"
                 btnText="View More Blog"
                 btnLink="/blog"
               />

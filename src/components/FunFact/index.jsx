@@ -24,16 +24,11 @@ export default function FunFact({ variant, title, subtitle, data }) {
       <Div className="cs-funfact_right">
         <Div className="cs-funfacts">
           {data.map((item, index) => (
-            <Div className="cs-funfact cs-style1" key={index}>
+            <Div className="cs-funfact cs-style1" key={item.title}>
               <Div className="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
                 <span />
-                <CountUp start={1} end={item.factNumber}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </CountUp>
+                <CountUp start={1} end={item.factNumber}/>
+                 
               </Div>
               <Div className="cs-funfact_text">
                 <span className="cs-accent_color">+</span>
