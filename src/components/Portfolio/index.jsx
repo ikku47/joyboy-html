@@ -6,7 +6,7 @@ export default function Portfolio({ href, src, title, subtitle, variant }) {
 const navigate = useNavigate();
 return (
     <Div
-      onClick={()=>navigate(href)}
+      // onClick={()=>navigate(href)}
       className={`cs-portfolio cs-bg ${variant ? variant : 'cs-style1'}`}
     >
       <>

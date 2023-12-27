@@ -33,7 +33,7 @@ export default function PortfolioSlider() {
         <Div key={index}>
           <Portfolio
             title={item.title}
-            href={item.href}
+            // href={item.href}
             subtitle={item.subtitle}
             src={item.src}
           />
