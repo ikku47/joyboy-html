@@ -8,7 +8,7 @@ export default function PortfolioSlider() {
   /** Slider Settings **/
   const settings = {
     centerMode: true,
-    infinite: false,
+    infinite: true,
     autoplay: true,
     autoplay: 1200,
     slidesToShow: 3,
@@ -33,6 +33,7 @@ export default function PortfolioSlider() {
         <Div key={index}>
           <Portfolio
             title={item.title}
+            href={item.href}
             subtitle={item.subtitle}
             src={item.src}
           />

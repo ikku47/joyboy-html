@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Div from '../Div';
 import './portfolio.scss';
-
 export default function Portfolio({ href, src, title, subtitle, variant }) {
-  return (
-    <Link
-      to={href}
+const navigate = useNavigate();
+return (
+    <Div
+      onClick={()=>navigate(href)}
       className={`cs-portfolio cs-bg ${variant ? variant : 'cs-style1'}`}
     >
       <>
@@ -21,6 +21,6 @@ export default function Portfolio({ href, src, title, subtitle, variant }) {
           <Div className="cs-portfolio_subtitle">{subtitle}</Div>
         </Div>
       </>
-    </Link>
+    </Div>
   );
 }
