@@ -28,17 +28,25 @@ export default function PortfolioSlider() {
   };
 
   return (
-    <Slider {...settings} className="cs-slider cs-style3 cs-gap-24">
-      {projects.map((item, index) => (
-        <Div key={index}>
-          <Portfolio
-            title={item.title}
-            // href={item.href}
-            subtitle={item.subtitle}
-            src={item.src}
-          />
-        </Div>
-      ))}
-    </Slider>
+    <div>
+      <Div>
+        {projects.map((item, index) => (
+          <Div className="mx-4">
+            <Div className="container cs-porfolio-item d-block d-md-flex ">
+              <Div className="col-md-9 col-12">
+                <h1>{item.title}</h1>
+                <Div>{item.description1}</Div>
+                <Div className="category mt-2">{item.category}</Div>
+              </Div>
+              <img
+                className="col-md-3 col-12 image mt-4 mt-md-0"
+                src={item.src}
+                alt=""
+              />
+            </Div>
+          </Div>
+        ))}
+      </Div>
+    </div>
   );
 }

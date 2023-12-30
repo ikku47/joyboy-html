@@ -2,7 +2,7 @@
   margin-left: -10px;
   margin-right: -10px;
 
-  >div {
+  > div {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -297,9 +297,11 @@ hr {
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-  background: linear-gradient(90deg,
-      rgba(11, 2, 23, 0.7) 22.69%,
-      rgba(22, 9, 42, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 2, 23, 0.7) 22.69%,
+    rgba(22, 9, 42, 0) 100%
+  );
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(20px);
@@ -429,7 +431,7 @@ hr {
     margin-left: 14px;
   }
 
-  >* {
+  > * {
     position: relative;
     z-index: 1;
   }
@@ -459,7 +461,7 @@ hr {
 }
 
 .cs-page_navigation {
-  >div {
+  > div {
     position: relative;
 
     &:not(:last-child) {
@@ -531,7 +533,7 @@ label {
   height: 24px;
   position: relative;
 
-  >* {
+  > * {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -551,7 +553,7 @@ label {
 .cs-post_meta.cs-style1 {
   display: flex;
 
-  >* {
+  > * {
     position: relative;
     display: inline-block;
 
@@ -661,7 +663,7 @@ label {
 }
 
 .cs-parallax {
-  >*:not([class*="cs-shape_"]) {
+  > *:not([class*="cs-shape_"]) {
     position: relative;
     z-index: 5;
   }
@@ -684,7 +686,6 @@ label {
 }
 
 @media screen and (max-width: 1199px) {
-
   .cs-right_space_40,
   .cs-right_space_150 {
     padding-right: 0;
@@ -736,7 +737,7 @@ label {
     font-size: 36px;
   }
 
-  .cs-btn_group>*:not(:last-child) {
+  .cs-btn_group > *:not(:last-child) {
     margin-right: 10px;
   }
 
@@ -907,7 +908,6 @@ label {
 }
 
 @keyframes particalAnimation {
-
   0%,
   100% {
     transform: translate(0px, 0px);
@@ -1132,13 +1132,13 @@ label {
   position: relative;
   overflow: hidden;
 
-  >.container {
+  > .container {
     position: relative;
     z-index: 3;
   }
 
   .cs-shape_2 {
-    >div {
+    > div {
       background-color: #181818;
     }
 
@@ -1176,7 +1176,7 @@ label {
 }
 
 .cs-page_heading.cs-style1 {
-  height: 650px;
+  height: 300px;
   padding: 120px 0 50px;
   position: relative;
 
@@ -1192,7 +1192,7 @@ label {
     filter: blur(125px);
   }
 
-  >* {
+  > * {
     position: relative;
     z-index: 2;
   }
@@ -1216,11 +1216,11 @@ label {
   }
 }
 
-.breadcrumb-item+.breadcrumb-item {
+.breadcrumb-item + .breadcrumb-item {
   padding-left: 14px;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   content: "";
   height: 17px;
   width: 1px;
@@ -1362,9 +1362,11 @@ label {
     z-index: 2;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right,
-        transparent 0%,
-        rgba(255, 255, 255, 0.15) 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 100%
+    );
     transform: skewX(-25deg);
     z-index: 1;
   }
@@ -1594,7 +1596,7 @@ label {
   column-gap: 25px;
   padding: 0 25px;
 
-  >* {
+  > * {
     margin-bottom: 25px;
   }
 }
@@ -1720,7 +1722,7 @@ label {
       display: block;
     }
 
-    .cs-section_heading+.cs-filter_menu {
+    .cs-section_heading + .cs-filter_menu {
       margin-top: 30px;
     }
   }
@@ -1789,7 +1791,7 @@ label {
       display: block;
     }
 
-    .cs-section_heading+.cs-tab_links {
+    .cs-section_heading + .cs-tab_links {
       margin-top: 50px;
     }
   }
@@ -1859,10 +1861,7 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,
-      0,
-      0,
-      0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   /* Adjust the last value for the opacity */
   z-index: 9;
   display: flex;
@@ -1875,5 +1874,51 @@ label {
 .cs-page_heading {
   .container {
     z-index: 10;
+  }
+}
+
+.cs-porfolio-item {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  margin-top: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 2, 23, 0.7) 22.69%,
+    rgba(22, 9, 42, 0) 100%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  border: 0.1px solid rgba(255, 255, 255, 0.163);
+  border-radius: 16px;
+  overflow: hidden;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .image {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  img {
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.02);
+  }
+
+  .category {
+    background-color: #ffffff26;
+    color: white;
+    border-radius: 16px;
+    font-size: 10px;
+    display: inline-block;
+    padding: 0 12px;
   }
 }
