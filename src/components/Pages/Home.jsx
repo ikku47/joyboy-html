@@ -73,8 +73,8 @@ export default function Home() {
       <div className="container">
         <FunFact
           variant="cs-type1"
-          title="<Dev> agency like 'no other'"
-          subtitle="Discover the Future with Joyboy: Leading the Way in Web2 to Web3, Mobile App Development, UI/UX Design, and AI Solutions"
+          title="Hire a full-fledged software development team"
+          subtitle="Decide between specialized technical experts or self-directed cross-functional teams. We possess the capability to manage intricate mobile and web software projects throughout the entire process, from initial exploration to final delivery."
           data={funfaceData}
         />
       </div>
@@ -208,7 +208,7 @@ export default function Home() {
         <Spacing lg="85" md="45" />
         <TeamSlider />
       </Div>
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" /> */}
       {/* End Team Section */}
 
       {/* Start Testimonial Section */}
@@ -218,16 +218,7 @@ export default function Home() {
       monial Section */}
 
       {/* Start Blog Section */}
-      <Spacing
-        lg="50
-      
-      
-      
-      
-      
-      "
-        md="80"
-      />
+      {/* <Spacing lg="50" md="80" />
       <Div className="cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>
@@ -249,7 +240,7 @@ export default function Home() {
             </Div>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
       {/* End Blog Section */}
 
       {/* Start MovingText Section */}
@@ -260,6 +251,12 @@ export default function Home() {
 
       {/* Start LogoList Section */}
       <Div className="container">
+        <SectionHeading
+          title="Trusted by great companies"
+          subtitle="Clients"
+          btnText="See All Services"
+          btnLink="/service"
+        />
         <LogoList />
       </Div>
       <Spacing lg="150" md="80" />
