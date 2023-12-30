@@ -1,7 +1,6 @@
 "use strict";
 
 const canvas = document.getElementsByTagName("canvas")[0];
-let timeoutId;
 resizeCanvas();
 
 let config = {
@@ -1226,31 +1225,7 @@ multipleSplats(parseInt(Math.random() * 20) + 5);
 
 multipleSplats(parseInt(Math.random() * 20) + 5);
 
-
-function createTimeout() {
-  return setTimeout(startCircularMotion, 2000);
-}
-
-function checkVisibility(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Element is in the viewport
-      if (!timeoutId) {
-        // If timeout is not already set, create a new one
-        timeoutId = createTimeout();
-      }
-    } else {
-      // Element is not in the viewport, clear the timeout
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-        timeoutId = undefined;
-      }
-    }
-  });
-}
-
-const observer = new IntersectionObserver(checkVisibility);
-observer.observe(canvas);
+setTimeout(startCircularMotion, 2000);
 
 let lastUpdateTime = Date.now();
 let colorUpdateTimer = 0.0;

@@ -17,7 +17,7 @@ import TimelineSlider from "../Slider/TimelineSlider";
 import { pageTitle } from "../../helper";
 
 export default function Home() {
-  pageTitle("Home");
+  pageTitle("Home1");
 
   // Hero Social Links
   const heroSocialLinks = [
@@ -218,13 +218,16 @@ export default function Home() {
       monial Section */}
 
       {/* Start Blog Section */}
-      <Spacing lg="50
+      <Spacing
+        lg="50
       
       
       
       
       
-      " md="80" />
+      "
+        md="80"
+      />
       <Div className="cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>

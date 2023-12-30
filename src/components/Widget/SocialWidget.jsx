@@ -6,15 +6,30 @@ import Div from "../Div";
 export default function SocialWidget() {
   return (
     <Div className="cs-social_btns cs-style1">
-      <Link to="/" className="cs-center">
+      <a
+        href="https://www.linkedin.com/company/joyboy-ae"
+        className="cs-center"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon icon="fa6-brands:linkedin-in" />
-      </Link>
-      <Link to="/" className="cs-center">
+      </a>
+      <a
+        href="https://www.twitter.com/joyboy_ae"
+        className="cs-center"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon icon="fa6-brands:twitter" />
-      </Link>
-      <Link to="/" className="cs-center">
+      </a>
+      <a
+        href="https://www.instagram.com/joyboy_ae_"
+        className="cs-center"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon icon="fa6-brands:instagram" />
-      </Link>
+      </a>
     </Div>
   );
 }
