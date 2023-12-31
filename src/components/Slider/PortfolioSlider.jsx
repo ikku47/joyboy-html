@@ -1,6 +1,7 @@
 import React from "react";
 import projects from "../../json/projects.json";
 import Portfolio from "../Portfolio";
+import ShinyWrapper from "../ShinyWrapper";
 import Div from "../Div";
 import Slider from "react-slick";
 
@@ -32,7 +33,7 @@ export default function PortfolioSlider() {
       <Div>
         {projects.map((item, index) => (
           <Div className="mx-4">
-            <Div className="container cs-porfolio-item d-block d-md-flex ">
+            <ShinyWrapper className="container cs-porfolio-item d-block d-md-flex ">
               <Div className="col-md-9 col-12">
                 <h1>{item.title}</h1>
                 <Div>{item.description1}</Div>
@@ -43,7 +44,7 @@ export default function PortfolioSlider() {
                 src={item.src}
                 alt=""
               />
-            </Div>
+            </ShinyWrapper>
           </Div>
         ))}
       </Div>
