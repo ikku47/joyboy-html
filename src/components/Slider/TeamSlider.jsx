@@ -20,6 +20,17 @@ export default function TeamSlider() {
 
   const teamData = [
     {
+      memberImage: "/images/team/salman.png",
+      memberName: "Salman.",
+      memberDesignation: "Chief Strategic Advisor | Lead Counsel",
+      memberSocial: {
+        linkedin: "https://www.linkedin.com/in/ikku47",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
       memberImage: "/images/team/iqqu.png",
       memberName: "Iqbal.",
       memberDesignation: "Co-Founder | Team Lead",
@@ -71,6 +82,28 @@ export default function TeamSlider() {
       memberSocial: {
         linkedin:
           "https://www.linkedin.com/in/muhammadfayis/?originalSubdomain=in",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/rayaan.png",
+      memberName: "Rayaan.",
+      memberDesignation: "Business Development Officer",
+      memberSocial: {
+        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/afsala.png",
+      memberName: "Afsala.",
+      memberDesignation: "QA Lead",
+      memberSocial: {
+        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -91,9 +124,9 @@ export default function TeamSlider() {
 
   const teamDataMob = [
     {
-      memberImage: "/images/team/iqqu.png",
-      memberName: "Iqbal.",
-      memberDesignation: "Co-Founder | Team Lead",
+      memberImage: "/images/team/salman.png",
+      memberName: "Salman.",
+      memberDesignation: "Chief Strategic Advisor | Lead Counsel",
       memberSocial: {
         linkedin: "https://www.linkedin.com/in/ikku47",
         twitter: "/",
@@ -102,23 +135,34 @@ export default function TeamSlider() {
       }
     },
     {
-      memberImage: "/images/team/faiz.png",
-      memberName: "Faiz.",
-      memberDesignation: "Full Stack MERN Developer ",
+      memberImage: "/images/team/faris.png",
+      memberName: "Faris.",
+      memberDesignation: "Flutter Lead",
       memberSocial: {
         linkedin:
-          "https://www.linkedin.com/in/muhammadfayis/?originalSubdomain=in",
+          "https://www.linkedin.com/in/mohammed-faris-k-1a5b11148/?originalSubdomain=ae",
         twitter: "/",
         youtube: "/",
         facebook: "/"
       }
     },
     {
-      memberImage: "/images/team/ameer.png",
-      memberName: "Ameer.",
-      memberDesignation: "Co-Founder | Dev/Design Lead",
+      memberImage: "/images/team/rayaan.png",
+      memberName: "Rayaan.",
+      memberDesignation: "Business Development Officer",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/ameer-rizvi-10/",
+        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/iqqu.png",
+      memberName: "Iqbal.",
+      memberDesignation: "Co-Founder | Team Lead",
+      memberSocial: {
+        linkedin: "https://www.linkedin.com/in/ikku47",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -136,12 +180,34 @@ export default function TeamSlider() {
       }
     },
     {
-      memberImage: "/images/team/faris.png",
-      memberName: "Faris.",
-      memberDesignation: "Flutter Lead",
+      memberImage: "/images/team/afsala.png",
+      memberName: "Afsala.",
+      memberDesignation: "QA Lead",
+      memberSocial: {
+        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/ameer.png",
+      memberName: "Ameer.",
+      memberDesignation: "Co-Founder | Dev/Design Lead",
+      memberSocial: {
+        linkedin: "https://www.linkedin.com/in/ameer-rizvi-10/",
+        twitter: "/",
+        youtube: "/",
+        facebook: "/"
+      }
+    },
+    {
+      memberImage: "/images/team/faiz.png",
+      memberName: "Faiz.",
+      memberDesignation: "Full Stack MERN Developer ",
       memberSocial: {
         linkedin:
-          "https://www.linkedin.com/in/mohammed-faris-k-1a5b11148/?originalSubdomain=ae",
+          "https://www.linkedin.com/in/muhammadfayis/?originalSubdomain=in",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -189,7 +255,6 @@ export default function TeamSlider() {
     dots: false,
     infinite: false,
     slidesToShow: 6,
-    rows: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
     responsive: [
@@ -199,7 +264,7 @@ export default function TeamSlider() {
           slidesToShow: 3,
           dots: true,
           arrows: false,
-          rows: 2
+          rows: 3
         }
       }
     ]
@@ -223,16 +288,6 @@ export default function TeamSlider() {
           </Div>
         ))}
       </Slider>
-      {/* <div className="grid">
-      {teamData.map((item, index) => (
-         <Team
-         memberImage={item.memberImage}
-         memberName={item.memberName}
-         memberDesignation={item.memberDesignation}
-         memberSocial={item.memberSocial}
-       />
-      ))}
-    </div> */}
     </Div>
   );
 }
