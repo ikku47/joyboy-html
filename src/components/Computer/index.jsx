@@ -45,7 +45,7 @@ export default function Computer() {
       </group>
       {/* Postprocessing */}
       <EffectComposer disableNormalPass>
-        <Bloom luminanceThreshold={0} mipmapBlur luminanceSmoothing={0.0} intensity={6} />
+        {/* <Bloom luminanceThreshold={0} mipmapBlur luminanceSmoothing={0.0} intensity={6} /> */}
         <DepthOfField target={[0, 0, 13]} focalLength={0.3} bokehScale={15} height={700} />
       </EffectComposer>
       {/* Camera movements */}
