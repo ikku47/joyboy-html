@@ -36,7 +36,9 @@ export default function PortfolioSlider() {
             <ShinyWrapper className="container cs-porfolio-item d-block d-md-flex ">
               <Div className="col-md-9 col-12">
                 <h1>{item.title}</h1>
-                <Div>{item.description1}</Div>
+                <p style={{ fontWeight: "100", color: "#757575" }}>
+                  {item.description1}
+                </p>
                 <Div className="category mt-2">{item.category}</Div>
               </Div>
               <img
