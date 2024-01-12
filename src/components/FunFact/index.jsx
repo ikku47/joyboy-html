@@ -2,6 +2,7 @@ import React from "react";
 import Div from "../Div";
 import "./funfact.scss";
 import CountUp from "react-countup";
+import ShinyWrapper from "../ShinyWrapper";
 
 export default function FunFact({ variant, title, subtitle, data }) {
   return (
@@ -24,16 +25,18 @@ export default function FunFact({ variant, title, subtitle, data }) {
       <Div className="cs-funfact_right">
         <Div className="cs-funfacts">
           {data.map((item, index) => (
-            <Div className="cs-funfact cs-style1" key={item.title}>
-              <Div className="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
-                <span />
-                <CountUp start={1} end={item.factNumber} />
+            <ShinyWrapper>
+              <Div className="cs-funfact cs-style1" key={item.title}>
+                <Div className="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
+                  <span />
+                  <CountUp start={1} end={item.factNumber} />
+                </Div>
+                <Div className="cs-funfact_text">
+                  <span className="cs-accent_color">+</span>
+                  <p>{item.title}</p>
+                </Div>
               </Div>
-              <Div className="cs-funfact_text">
-                <span className="cs-accent_color">+</span>
-                <p>{item.title}</p>
-              </Div>
-            </Div>
+            </ShinyWrapper>
           ))}
         </Div>
       </Div>

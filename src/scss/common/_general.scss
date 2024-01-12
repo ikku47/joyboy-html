@@ -1882,16 +1882,16 @@ label {
   align-items: center;
   padding: 40px;
   margin-top: 20px;
-  background: linear-gradient(
-    to right,
-    rgb(6, 0, 10) 22.69%,
-    rgb(16, 6, 32, 0.5) 100%
-  );
+  // background: linear-gradient(
+  //   to right,
+  //   rgb(6, 0, 10) 22.69%,
+  //   rgb(16, 6, 32) 100%
+  // );
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(20px);
-  border: 0.1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border: 0.1px solid rgba(255, 255, 255, 0.163);
+  border-radius: 30px;
   // overflow: hidden;
 
   h1 {

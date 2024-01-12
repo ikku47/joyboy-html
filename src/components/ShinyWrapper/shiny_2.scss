@@ -6,7 +6,7 @@
   --size: 200;
 }
 
-.shiny {
+.shiny2 {
   border-radius: calc(var(--radius) * 1px);
   position: relative;
   box-shadow: 0 1rem 2rem -1rem black;
@@ -14,7 +14,7 @@
 }
 
 /* Glow specific styles */
-[data-glow] {
+[data-glow-2] {
   --border-size: calc(var(--border, 2) * 1px);
   --spotlight-size: calc(var(--size, 150) * 1px);
   --hue: 600;
@@ -37,8 +37,8 @@
   position: relative;
 }
 
-[data-glow]::before,
-[data-glow]::after {
+[data-glow-2]::before,
+[data-glow-2]::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -56,7 +56,7 @@
 }
 
 /* This is the emphasis light */
-[data-glow]::before {
+[data-glow-2]::before {
   background-image: radial-gradient(
     calc(var(--spotlight-size) * 0.75) calc(var(--spotlight-size) * 0.75) at
       calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
@@ -69,7 +69,7 @@
   filter: brightness(2);
 }
 /* This is the spotlight */
-[data-glow]::after {
+[data-glow-2]::after {
   background-image: radial-gradient(
     calc(var(--spotlight-size) * 0.5) calc(var(--spotlight-size) * 0.5) at
       calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
@@ -77,34 +77,34 @@
     transparent 100%
   );
 }
-[data-glow] [data-glow] {
+[data-glow-2] [data-glow-2] {
   position: absolute;
   inset: 0;
   will-change: filter;
   opacity: var(--outer, 1);
 }
-[data-glow] > [data-glow] {
+[data-glow-2] > [data-glow-2] {
   border-radius: calc(var(--radius) * 1px);
   border-width: calc(var(--border-size) * 20);
   filter: blur(calc(var(--border-size) * 10));
   background: none;
   pointer-events: none;
 }
-[data-glow] > [data-glow]::before {
+[data-glow-2] > [data-glow-2]::before {
   inset: -10px;
   border-width: 10px;
 }
-[data-glow] [data-glow] {
+[data-glow-2] [data-glow-2] {
   border: none;
 }
-[data-glow] :is(a, button) {
+[data-glow-2] :is(a, button) {
   border-radius: calc(var(--radius) * 1px);
   border: var(--border-size) solid transparent;
 }
-[data-glow] :is(a, button) [data-glow] {
+[data-glow-2] :is(a, button) [data-glow-2] {
   background: none;
 }
-[data-glow] :is(a, button) [data-glow]::before {
+[data-glow-2] :is(a, button) [data-glow-2]::before {
   inset: calc(var(--border-size) * -1);
   border-width: calc(var(--border-size) * 1);
 }

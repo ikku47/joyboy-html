@@ -15,6 +15,7 @@ import TeamSlider from "../Slider/TeamSlider";
 import VideoModal from "../VideoModal";
 import TimelineSlider from "../Slider/TimelineSlider";
 import { pageTitle } from "../../helper";
+import ShinyWrapper from "../ShinyWrapper";
 
 export default function Home() {
   pageTitle("Home1");
@@ -97,44 +98,59 @@ export default function Home() {
             <Div className="col-xl-8">
               <Div className="row">
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+
                 <Div className="col-lg-3 col-6">
-                  <Card
-                    title="Mobile App Development"
-                    link="/service/service-details"
-                    src="/images/mobile.png"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
+                  <ShinyWrapper>
+                    <Card
+                      title="Mobile App Development"
+                      link="/service/service-details"
+                      src="/images/mobile.png"
+                      alt="Service"
+                    />
+                    <Spacing lg="0" md="30" />
+                  </ShinyWrapper>
                 </Div>
+
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+
                 <Div className="col-lg-3 col-6">
-                  <Card
-                    title="UI/UX Design"
-                    link="/service/service-details"
-                    src="/images/ui.png"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
+                  <ShinyWrapper>
+                    <Card
+                      title="UI/UX Design"
+                      link="/service/service-details"
+                      src="/images/ui.png"
+                      alt="Service"
+                    />
+                    <Spacing lg="0" md="30" />
+                  </ShinyWrapper>
                 </Div>
+
                 <Div className="col-lg-3 col-6">
-                  <Card
-                    title="Web Development"
-                    link="/service/service-details"
-                    src="/images/web.png"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
+                  <ShinyWrapper>
+                    <Card
+                      title="Web Development"
+                      link="/service/service-details"
+                      src="/images/web.png"
+                      alt="Service"
+                    />
+                    <Spacing lg="0" md="30" />
+                  </ShinyWrapper>
                 </Div>
+
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+
                 <Div className="col-lg-3 col-6">
-                  <Card
-                    title="Web3"
-                    link="/service/service-details"
-                    src="/images/web3.png"
-                    alt="Service"
-                  />
-                  <Spacing lg="0" md="30" />
+                  <ShinyWrapper>
+                    <Card
+                      title="Web3"
+                      link="/service/service-details"
+                      src="/images/web3.png"
+                      alt="Service"
+                    />
+                    <Spacing lg="0" md="30" />
+                  </ShinyWrapper>
                 </Div>
+
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
               </Div>
             </Div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "./shiny.scss"; // Assuming you've created a CSS file for these styles
+import "./shiny.scss";
+// import "./shiny_2.scss";
 
 const ShinyWrapper = ({ children, className }) => {
   return (
