@@ -1,8 +1,9 @@
 import React, { useEffect, lazy, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import CustomCursor from "../CustomCursor";
-const Computer = lazy(() => import("../Computer"));
+// const Computer = lazy(() => import("../Computer"));
 import Header from "../Header";
+import Footer from "../Footer";
 
 export default function Layout({ headerVariant }) {
   useEffect(() => {
@@ -13,9 +14,8 @@ export default function Layout({ headerVariant }) {
       <Header variant={headerVariant} />
       <Outlet />
       {/* <CustomCursor /> */}
-      <Suspense fallback={<>Loading....</>}>
-        <Computer />
-      </Suspense>
+        <Footer />
     </>
   );
 }
+
