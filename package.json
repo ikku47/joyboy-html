@@ -22,7 +22,12 @@
     "sass": "^1.69.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.4.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@react-three/drei": "9.77.1",
+    "@react-three/fiber": "8.9.1",
+    "@react-three/postprocessing": "2.9.2",
+    "@types/three": "0.146.0",
+"three": "0.146.0"
   },
   "scripts": {
     "start": "react-scripts start",
