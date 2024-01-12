@@ -5,14 +5,20 @@ import { easing } from 'maath'
 import { suspend } from 'suspend-react'
 import { Instances, Computers } from './Computers'
 import Footer from '../Footer'
+import { useInView } from 'react-intersection-observer';
 
 // const suzi = import('@pmndrs/assets/models/bunny.glb')
 
 export default function Computer() {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+    triggerOnce: true
+  });
   return (
-    <div id="computer">
+    <div id="computer" ref={ref}>
       <Footer />
-    <Canvas  shadows dpr={[1, 1.5]} camera={{ position: [-1.5, 1, 5.5], fov: 45, near: 1, far: 20 }} eventSource={document.getElementById('computer')} eventPrefix="client">
+    {inView && <Canvas  shadows dpr={[1, 1.5]} camera={{ position: [-1.5, 1, 5.5], fov: 45, near: 1, far: 20 }} eventSource={document.getElementById('computer')} eventPrefix="client">
       {/* Lights */}
       <color attach="background" args={['#06030b']} />
       <hemisphereLight intensity={0.15} groundColor="#06030b" />
@@ -52,7 +58,7 @@ export default function Computer() {
       <CameraRig />
       {/* Small helper that freezes the shadows for better performance */}
       <BakeShadows />
-    </Canvas>
+    </Canvas>}
     </div>
   )
 }
