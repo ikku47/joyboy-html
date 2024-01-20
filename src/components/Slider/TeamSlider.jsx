@@ -24,7 +24,7 @@ export default function TeamSlider() {
       memberName: "Salman.",
       memberDesignation: "Chief Strategic Advisor | Lead Counsel",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/ikku47",
+        linkedin: "https://www.linkedin.com/in/k-s-khan-3797531b/",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -92,7 +92,7 @@ export default function TeamSlider() {
       memberName: "Rayaan.",
       memberDesignation: "Business Development Officer",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        linkedin: "https://www.linkedin.com/in/rayaan-khan-181865204",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -103,7 +103,7 @@ export default function TeamSlider() {
       memberName: "Afsala.",
       memberDesignation: "QA Lead",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        linkedin: "https://www.linkedin.com/in/afsalashirien/",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -128,7 +128,7 @@ export default function TeamSlider() {
       memberName: "Salman.",
       memberDesignation: "Chief Strategic Advisor | Lead Counsel",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/ikku47",
+        linkedin: "https://www.linkedin.com/in/k-s-khan-3797531b/",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -151,7 +151,7 @@ export default function TeamSlider() {
       memberName: "Rayaan.",
       memberDesignation: "Business Development Officer",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        linkedin: "https://www.linkedin.com/in/rayaan-khan-181865204",
         twitter: "/",
         youtube: "/",
         facebook: "/"
@@ -184,7 +184,7 @@ export default function TeamSlider() {
       memberName: "Afsala.",
       memberDesignation: "QA Lead",
       memberSocial: {
-        linkedin: "https://www.linkedin.com/in/uvais-mohammad-024440164/",
+        linkedin: "https://www.linkedin.com/in/afsalashirien/",
         twitter: "/",
         youtube: "/",
         facebook: "/"
