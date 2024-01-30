@@ -1,4 +1,4 @@
-import React, { Component,useEffect } from "react";
+import React, { Component, useEffect } from "react";
 import Button from "../Button";
 import Div from "../Div";
 import VerticalLinks from "../VerticalLinks";
@@ -28,14 +28,14 @@ class ScriptTag extends Component {
 function WebGLComponent(props) {
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0,
+    threshold: 0
     // triggerOnce: true,
   });
   const containerStyle = {
     width: "100%",
     height: "100%",
     overflow: "hidden",
-    position: "relative",
+    position: "relative"
   };
   const {
     title,
@@ -45,29 +45,25 @@ function WebGLComponent(props) {
     scrollDownId,
     socialLinksHeading,
     heroSocialLinks,
-    bgImageUrl,
+    bgImageUrl
   } = props;
   useEffect(() => {
-    if(window.startCircularMotion){
-      if(inView) startCircularMotion();
+    if (window.startCircularMotion) {
+      if (inView) startCircularMotion();
       else stopCircularMotion();
     }
-  }, [inView])
-  
+  }, [inView]);
+
   return (
     <div style={containerStyle}>
-      <Div
-        
-        className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"
-        // style={{ backgroundImage: `url(${bgImageUrl})` }}
-      >
+      <Div className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1">
         <Div className="cs-shape_1" />
         <Div className="cs-shape_1" />
         <Div className="cs-shape_1" />
         <Div className="container">
           <Div className="cs-hero_text">
             <h1
-            ref={ref}
+              ref={ref}
               className="cs-hero_title user-select-none"
               style={{ userSelect: "none" }}
             >
@@ -89,11 +85,7 @@ function WebGLComponent(props) {
           </Div>
         </Div>
         <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
-        <a href={scrollDownId} className="cs-down_btn">
-          .
-        </a>
-      </Div>
-
+        <a href={scrollDownId} className="cs-down_btn"></a>
         <>
           <ScriptTag src="/dat.gui.min.js" />
           <ScriptTag src="/script.js" />
@@ -103,10 +95,11 @@ function WebGLComponent(props) {
               height: "100%",
               position: "absolute",
               top: 0,
-              left: 0,
+              left: 0
             }}
           />
         </>
+      </Div>
     </div>
   );
 }
