@@ -16,6 +16,7 @@ import VideoModal from "../VideoModal";
 import TimelineSlider from "../Slider/TimelineSlider";
 import { pageTitle } from "../../helper";
 import ShinyWrapper from "../ShinyWrapper";
+import PortfolioSliderNew from "../Slider/PortfolioSliderNew";
 
 export default function Home() {
   pageTitle("Home1");
@@ -164,13 +165,14 @@ export default function Home() {
       <Div>
         <Div className="container">
           <SectionHeading
-            title="Portfolio to explore"
+            title="Client Stories"
             subtitle="Latest Projects"
             variant="cs-style1 text-center"
           />
           <Spacing lg="90" md="45" />
         </Div>
-        <PortfolioSlider />
+        <PortfolioSliderNew />
+        {/* <PortfolioSlider /> */}
       </Div>
       {/* End Portfolio Section */}
 
