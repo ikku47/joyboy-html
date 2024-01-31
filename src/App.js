@@ -24,34 +24,28 @@ import CaseStudyShowcaseHome from "./components/Pages/CaseStudyShowcaseHome";
 import Layout from "./components/Layout";
 import CaseStudyDetailsPage from "./components/Pages/CaseStudyDetailsPage";
 import FaqPage from "./components/Pages/FaqPage";
-import LocomotiveScroll from 'locomotive-scroll';
-import "locomotive-scroll/dist/locomotive-scroll.css";
 
 function App() {
   useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-    });
     const syncPointer = ({ x, y }) => {
-      document.documentElement.style.setProperty('--x', x.toFixed(2))
+      document.documentElement.style.setProperty("--x", x.toFixed(2));
       document.documentElement.style.setProperty(
-        '--xp',
+        "--xp",
         (x / window.innerWidth).toFixed(2)
-      )
-      document.documentElement.style.setProperty('--y', y.toFixed(2))
+      );
+      document.documentElement.style.setProperty("--y", y.toFixed(2));
       document.documentElement.style.setProperty(
-        '--yp',
+        "--yp",
         (y / window.innerHeight).toFixed(2)
-      )
-    }
-    document.body.addEventListener('pointermove', syncPointer)
+      );
+    };
+    document.body.addEventListener("pointermove", syncPointer);
     return () => {
-      document.removeEventListener('pointermove', syncPointer);
+      document.removeEventListener("pointermove", syncPointer);
     };
   }, []);
   return (
-    <div data-scroll-container>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -105,7 +99,7 @@ function App() {
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
