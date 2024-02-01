@@ -13,7 +13,103 @@
     "location": "Global",
     "software": "AI, Machine Learning, Big Data Analytics",
     "dated": "2023-01-15",
-    "client": "Super Future Investments Inc."
+    "client": "Super Future Investments Inc.",
+    "type": 1
+  },
+  {
+    "slug": "super-future-smart-investments",
+    "title": "SF: Smart Crypto",
+    "subtitle": "Crypto investment platform",
+    "href": "/portfolio/super-future-smart-investments",
+    "src": "/images/new/app-sf (1).webp",
+    "logo": "/images/new/app-sf-l.webp",
+    "link": "https://cryptowallet-lovat.vercel.app/",
+    "ios": "https://apps.apple.com/in/app/sf-india-smart-crypto/id6449464034",
+    "android": "https://play.google.com/store/apps/details?id=com.superfuture.indian",
+    "description1": "From crypto chaos to confident gains: We built Super Future, an AI-powered investment platform that empowers users to make smart decisions in volatile markets.",
+    "description2": "Our platform goes beyond conventional investment approaches, offering predictive market analysis, sophisticated risk management tools, and personalized investment strategies. Whether you're a seasoned investor or just starting, Super Future is your intelligent companion on the path to financial success. Join us to unlock the full potential of your investments and stay ahead in the ever-evolving world of finance.",
+    "category": "Finance",
+    "location": "Global",
+    "software": "AI, Machine Learning, Big Data Analytics",
+    "dated": "2023-01-15",
+    "client": "Super Future Investments Inc.",
+    "type": 2
+  },
+  {
+    "slug": "super-future-smart-investments",
+    "title": "TouchToFix (TSAS)",
+    "subtitle": "Crypto investment platform",
+    "href": "/portfolio/super-future-smart-investments",
+    "src": "/images/new/app-ttf.webp",
+    "logo": "/images/new/app-ttf-l.webp",
+    "link": "https://cryptowallet-lovat.vercel.app/",
+    "ios": "https://apps.apple.com/in/app/touchtofix/id1531342208",
+    "android": "https://play.google.com/store/apps/details?id=com.sanyaa.customer",
+    "description1": "From crypto chaos to confident gains: We built Super Future, an AI-powered investment platform that empowers users to make smart decisions in volatile markets.",
+    "description2": "Our platform goes beyond conventional investment approaches, offering predictive market analysis, sophisticated risk management tools, and personalized investment strategies. Whether you're a seasoned investor or just starting, Super Future is your intelligent companion on the path to financial success. Join us to unlock the full potential of your investments and stay ahead in the ever-evolving world of finance.",
+    "category": "Finance",
+    "location": "Global",
+    "software": "AI, Machine Learning, Big Data Analytics",
+    "dated": "2023-01-15",
+    "client": "Super Future Investments Inc.",
+    "type": 2
+  },
+  {
+    "slug": "super-future-smart-investments",
+    "title": "Let's Deal: Car Buy & Sell",
+    "subtitle": "Crypto investment platform",
+    "href": "/portfolio/super-future-smart-investments",
+    "src": "/images/new/app-ld.webp",
+    "logo": "/images/new/app-ld-l.webp",
+    "link": "https://cryptowallet-lovat.vercel.app/",
+    "ios": "https://apps.apple.com/ae/app/lets-deal-buy-and-sell-cars/id1640894840",
+    "android": "https://play.google.com/store/apps/details?id=ae.letsdeal.letsdeal2",
+    "description1": "From crypto chaos to confident gains: We built Super Future, an AI-powered investment platform that empowers users to make smart decisions in volatile markets.",
+    "description2": "Our platform goes beyond conventional investment approaches, offering predictive market analysis, sophisticated risk management tools, and personalized investment strategies. Whether you're a seasoned investor or just starting, Super Future is your intelligent companion on the path to financial success. Join us to unlock the full potential of your investments and stay ahead in the ever-evolving world of finance.",
+    "category": "Finance",
+    "location": "Global",
+    "software": "AI, Machine Learning, Big Data Analytics",
+    "dated": "2023-01-15",
+    "client": "Super Future Investments Inc.",
+    "type": 2
+  },
+  {
+    "slug": "super-future-smart-investments",
+    "title": "Star Rise - Internships",
+    "subtitle": "Crypto investment platform",
+    "href": "/portfolio/super-future-smart-investments",
+    "src": "/images/new/app-sr.webp",
+    "logo": "/images/new/app-sr-l.webp",
+    "link": "https://cryptowallet-lovat.vercel.app/",
+    "ios": "https://apps.apple.com/ae/app/star-rise-internships-more/id6446956216",
+    "android": "https://play.google.com/store/apps/details?id=ae.starrise.amr.app.starrise_internship_app&hl=en_US",
+    "description1": "From crypto chaos to confident gains: We built Super Future, an AI-powered investment platform that empowers users to make smart decisions in volatile markets.",
+    "description2": "Our platform goes beyond conventional investment approaches, offering predictive market analysis, sophisticated risk management tools, and personalized investment strategies. Whether you're a seasoned investor or just starting, Super Future is your intelligent companion on the path to financial success. Join us to unlock the full potential of your investments and stay ahead in the ever-evolving world of finance.",
+    "category": "Finance",
+    "location": "Global",
+    "software": "AI, Machine Learning, Big Data Analytics",
+    "dated": "2023-01-15",
+    "client": "Super Future Investments Inc.",
+    "type": 2
+  },
+  {
+    "slug": "super-future-smart-investments",
+    "title": "SF: Chat IM",
+    "subtitle": "Crypto investment platform",
+    "href": "/portfolio/super-future-smart-investments",
+    "src": "/images/new/app-chat.webp",
+    "logo": "/images/new/app-chat-l.webp",
+    "link": "https://cryptowallet-lovat.vercel.app/",
+    "ios": "https://apps.apple.com/ae/app/sf-chat-im-china/id6450926781",
+    "android": "https://play.google.com/store/apps/details?id=ae.starrise.amr.app.starrise_internship_app&hl=en_US",
+    "description1": "From crypto chaos to confident gains: We built Super Future, an AI-powered investment platform that empowers users to make smart decisions in volatile markets.",
+    "description2": "Our platform goes beyond conventional investment approaches, offering predictive market analysis, sophisticated risk management tools, and personalized investment strategies. Whether you're a seasoned investor or just starting, Super Future is your intelligent companion on the path to financial success. Join us to unlock the full potential of your investments and stay ahead in the ever-evolving world of finance.",
+    "category": "Finance",
+    "location": "Global",
+    "software": "AI, Machine Learning, Big Data Analytics",
+    "dated": "2023-01-15",
+    "client": "Super Future Investments Inc.",
+    "type": 2
   },
   {
     "slug": "zb-lifestyle-web",
@@ -29,7 +125,8 @@
     "location": "Global",
     "software": "AI, Machine Learning, Big Data Analytics",
     "dated": "2023-01-15",
-    "client": "Super Future Investments Inc."
+    "client": "Super Future Investments Inc.",
+    "type": 1
   },
   {
     "slug": "lets-deal",
@@ -45,7 +142,8 @@
     "location": "Global",
     "software": "Flutter , JavaScript, Cordova",
     "dated": "2023-06-10",
-    "client": "Let's Deal Automotive Solutions Ltd."
+    "client": "Let's Deal Automotive Solutions Ltd.",
+    "type": 1
   },
   {
     "slug": "connectin-legal",
@@ -61,7 +159,8 @@
     "location": "Global",
     "software": "React JS",
     "dated": "2023-07-05",
-    "client": "Connectin Translation Services Inc."
+    "client": "Connectin Translation Services Inc.",
+    "type": 1
   },
   {
     "slug": "touch-to-fix",
@@ -77,7 +176,8 @@
     "location": "Global",
     "software": "Flutter , Chat Gpt, PHP, Socket.io",
     "dated": "2023-05-20",
-    "client": "Touch to Fix Technologies Inc."
+    "client": "Touch to Fix Technologies Inc.",
+    "type": 1
   },
   {
     "slug": "touch-to-fix",
@@ -87,12 +187,13 @@
     "src": "/images/new/web-dl.webp",
     "logo": "/images/new/dl-l.svg",
     "link": "https://dashalapushka.vercel.app/",
-    "description1": "TouchToFix, a patented web and mobile platform delivering seamless expert assistance. We wielded Flutter's cross-platform magic, Socket.io's real-time connection, Next.js's web velocity, and PHP's core strength to empower businesses with on-demand expertise, rapid troubleshooting, and user-friendly efficiency.",
+    "description1": "We created the Dasha Lapushka NFT, managing design, photography, marketing, and setting up smart contracts for OpenSea sales.",
     "description2": "The industry's only on-demand incident-based secured remote support platform for all your IT infrastructure troubleshooting requirements. Highly qualified and skilled Touch to Fix virtual employees deliver IT support through a stringent internal selection process. The platform charges for the service time utilized without any long-term subscription commitments.",
     "category": "IT Services",
     "location": "Global",
     "software": "Flutter , Chat Gpt, PHP, Socket.io",
     "dated": "2023-05-20",
-    "client": "Touch to Fix Technologies Inc."
+    "client": "Touch to Fix Technologies Inc.",
+    "type": 1
   }
 ]

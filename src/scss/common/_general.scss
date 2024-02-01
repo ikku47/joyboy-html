@@ -1881,18 +1881,11 @@ label {
   display: flex;
   align-items: center;
   padding: 20px;
-  margin-top: 20px;
-  // background: linear-gradient(
-  //   to right,
-  //   rgb(6, 0, 10) 22.69%,
-  //   rgb(16, 6, 32) 100%
-  // );
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(20px);
   border: 0.1px solid rgba(255, 255, 255, 0.163);
   border-radius: 30px;
-  // overflow: hidden;
 
   h1 {
     font-size: 30px;
@@ -1915,6 +1908,12 @@ label {
     border-radius: 30px;
     transform: perspective(1200px) rotateY(-15deg) translateY(-0px)
       rotateX(10deg) scale(1);
+  }
+
+  .imageNormal {
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 30px;
   }
 
   img {
@@ -1945,7 +1944,7 @@ label {
 
 .new-portfolio {
   display: grid;
-  grid-gap: 36px 20px;
+  grid-gap: 20px 20px;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 3vw;
 }
@@ -1955,6 +1954,9 @@ label {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 0;
   }
+  .cs-porfolio-item {
+    width: 92%;
+  }
 }
 
 .portfolio-header {
@@ -1962,17 +1964,46 @@ label {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  transition: gap 0.3s ease;
   user-select: none;
   height: 40px;
-  h5 {
-    color: #ffffff78;
-    cursor: pointer;
-    font-size: 18px;
-    transition: color 0.3s ease, font-size 0.5s ease;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.portfolio-header h5 {
+  color: #ffffff78;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease, font-size 0.5s ease;
+  text-align: center;
+}
+
+.portfolio-header h5:hover {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.portfolio-header h5.selected {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.port-app-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .portfolio-header h5 {
+    font-size: 14px;
   }
-  h5:hover {
-    color: #ffffff;
-    font-size: 20px;
+  .portfolio-header h5:hover {
+    font-size: 16px;
+  }
+  .portfolio-header h5.selected {
+    font-size: 16px;
   }
 }
