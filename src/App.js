@@ -41,7 +41,7 @@ function App() {
     };
     document.body.addEventListener("pointermove", syncPointer);
     return () => {
-      document.removeEventListener("pointermove", syncPointer);
+      document.body.removeEventListener("pointermove", syncPointer);
     };
   }, []);
   return (
