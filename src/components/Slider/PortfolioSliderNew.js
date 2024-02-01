@@ -25,7 +25,7 @@ export default function PortfolioSliderNew() {
         >
           App Development
         </h5>
-        <h5
+        {/* <h5
           className={selectedHeader === 3 ? "selected" : ""}
           onClick={() => setSelectedHeader(3)}
         >
@@ -36,7 +36,7 @@ export default function PortfolioSliderNew() {
           onClick={() => setSelectedHeader(4)}
         >
           3D Design
-        </h5>
+        </h5> */}
       </Div>
       <Div className="new-portfolio">
         {filteredProjects.map((item, index) => (
