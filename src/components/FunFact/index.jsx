@@ -27,7 +27,7 @@ export default function FunFact({ variant, title, subtitle, data }) {
       </div>
       <Div className="cs-funfact_left">
         <Div className="cs-funfact_heading">
-          <h2>{title}</h2>
+          <h1>{title}</h1>
           <p>{subtitle}</p>
         </Div>
       </Div>
