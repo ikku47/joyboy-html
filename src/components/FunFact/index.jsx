@@ -3,8 +3,10 @@ import Div from "../Div";
 import "./funfact.scss";
 import CountUp from "react-countup";
 import ShinyWrapper from "../ShinyWrapper";
+import { isIPad13, isIPhone13, isIPod13 } from "react-device-detect";
 
 export default function FunFact({ variant, title, subtitle, data }) {
+  const isIPhone = isIPad13 || isIPhone13 || isIPod13 || true;
   return (
     <Div className={variant ? `cs-funfact_wrap ${variant}` : "cs-funfact_wrap"}>
       {/* <Div
@@ -12,8 +14,15 @@ export default function FunFact({ variant, title, subtitle, data }) {
         style={{ backgroundImage: "url(./images/funfact_shape_bg.svg)" }}
       /> */}
       <div className="cs-funfact_shape">
-        <video autoPlay loop muted className="video-container">
-          <source src="/bg1.webm" type="video/mp4" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls={false}
+          className="video-container"
+        >
+          <source src={isIPhone ? "/bg1.mp4" : "/bg1.webm"} type="video/mp4" />
         </video>
       </div>
       <Div className="cs-funfact_left">
