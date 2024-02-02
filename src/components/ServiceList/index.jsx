@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Div from "../Div";
 import "./servicelist.scss";
+import { isMobile } from "react-device-detect";
 
 export default function ServiceList() {
   const serviceData = [
@@ -48,15 +49,17 @@ export default function ServiceList() {
         >
           <Link to={item.href} className="cs-iconbox cs-style3">
             <>
-              <Div className="cs-image_layer cs-style1 cs-size_md">
-                <Div className="cs-image_layer_in ">
-                  <img
-                    src={item.imgUrl}
-                    alt="Thumb"
-                    className="w-100 cs-radius_15"
-                  />
+              {!isMobile && (
+                <Div className="cs-image_layer cs-style1 cs-size_md">
+                  <Div className="cs-image_layer_in ">
+                    <img
+                      src={item.imgUrl}
+                      alt="Thumb"
+                      className="w-100 cs-radius_15"
+                    />
+                  </Div>
                 </Div>
-              </Div>
+              )}
               <span className="cs-iconbox_icon cs-center">
                 <svg
                   width={30}
