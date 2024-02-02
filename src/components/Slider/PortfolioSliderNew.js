@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import projects from "../../json/projects.json";
 import ShinyWrapper from "../ShinyWrapper";
 import Div from "../Div";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
 
 export default function PortfolioSliderNew() {
   const [selectedHeader, setSelectedHeader] = useState(1);
@@ -12,7 +14,32 @@ export default function PortfolioSliderNew() {
 
   return (
     <div>
-      <Div className="portfolio-header">
+      <Div className="cs-portfolio_1_heading col-xl-6 container">
+        <SectionHeading title="Clients Stories" subtitle="Latest Projects" />
+        <Div className="cs-filter_menu cs-style1">
+          <ul className="cs-mp0 cs-center">
+            <li className={selectedHeader === 1 ? "active" : ""}>
+              <span onClick={() => setSelectedHeader(1)}>Web Development</span>
+            </li>
+            <li className={selectedHeader === 2 ? "active" : ""}>
+              <span onClick={() => setSelectedHeader(2)}>App Development</span>
+            </li>
+            {/* {categoryMenu.map((item, index) => (
+              <li
+                className={active === item.category ? "active" : ""}
+                key={index}
+              >
+                <span onClick={() => setActive(item.category)}>
+                  {item.title}
+                </span>
+              </li>
+            ))} */}
+          </ul>
+        </Div>
+      </Div>
+
+      <Spacing lg="85" md="45" />
+      {/* <Div className="portfolio-header">
         <h5
           className={selectedHeader === 1 ? "selected" : ""}
           onClick={() => setSelectedHeader(1)}
@@ -25,19 +52,7 @@ export default function PortfolioSliderNew() {
         >
           App Development
         </h5>
-        {/* <h5
-          className={selectedHeader === 3 ? "selected" : ""}
-          onClick={() => setSelectedHeader(3)}
-        >
-          UI/UX Design
-        </h5>
-        <h5
-          className={selectedHeader === 4 ? "selected" : ""}
-          onClick={() => setSelectedHeader(4)}
-        >
-          3D Design
-        </h5> */}
-      </Div>
+      </Div> */}
       <Div className="new-portfolio">
         {filteredProjects.map((item, index) => (
           <Div className="col-12">

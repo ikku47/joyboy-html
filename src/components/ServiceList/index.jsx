@@ -1,55 +1,55 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Div from '../Div';
-import './servicelist.scss';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Div from "../Div";
+import "./servicelist.scss";
 
 export default function ServiceList() {
   const serviceData = [
     {
-      title: 'WP Development',
+      title: "Web Development",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_7.jpeg',
-      href: '/service/service-details',
+        "Elevate your brand online with our responsive web development. Expertly designed for user engagement and seamless experiences.",
+      imgUrl: "/images/new/webService3.jpg",
+      href: "https://wa.me/971506189848"
     },
     {
-      title: 'UI/UX Design',
+      title: "App Development",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_8.jpeg',
-      href: '/service/service-details',
+        "Ignite success with our iOS and Android app expertise. Cutting-edge solutions for optimal user experiences and market relevance.",
+      imgUrl: "/images/new/appService.jpg",
+      href: "https://wa.me/971506189848"
     },
     {
-      title: 'Branding',
+      title: "UI/UX Design",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_9.jpeg',
-      href: '/service/service-details',
+        "Boost satisfaction with our captivating UI/UX designs. Crafted interfaces for superior engagement and lasting impact.",
+      imgUrl: "/images/new/uiService.jpg",
+      href: "https://wa.me/971506189848"
     },
     {
-      title: 'Social Ad Campaign',
+      title: "3D Web/Product Design",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_10.jpeg',
-      href: '/service/service-details',
-    },
+        "Immerse audiences in stunning 3D experiences. Enhance engagement and visual appeal with our expert design solutions.",
+      imgUrl: "/images/new/3dService.jpg",
+      href: "https://wa.me/971506189848"
+    }
   ];
   const [active, setActive] = useState(0);
-  const handelActive = index => {
+  const handelActive = (index) => {
     setActive(index);
   };
   return (
     <Div className="cs-iconbox_3_list">
       {serviceData.map((item, index) => (
         <Div
-          className={`cs-hover_tab ${active === index ? 'active' : ''}`}
+          className={`cs-hover_tab ${active === index ? "active" : ""}`}
           key={index}
           onMouseEnter={() => handelActive(index)}
         >
           <Link to={item.href} className="cs-iconbox cs-style3">
             <>
               <Div className="cs-image_layer cs-style1 cs-size_md">
-                <Div className="cs-image_layer_in">
+                <Div className="cs-image_layer_in ">
                   <img
                     src={item.imgUrl}
                     alt="Thumb"

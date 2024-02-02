@@ -8,15 +8,11 @@ import Spacing from "../Spacing";
 import Cta from "../Cta";
 import LogoList from "../LogoList";
 import MovingText from "../MovingText";
-import PortfolioSlider from "../Slider/PortfolioSlider";
-import PostSlider from "../Slider/PostSlider";
-import TestimonialSlider from "../Slider/TestimonialSlider";
 import TeamSlider from "../Slider/TeamSlider";
-import VideoModal from "../VideoModal";
-import TimelineSlider from "../Slider/TimelineSlider";
 import { pageTitle } from "../../helper";
 import ShinyWrapper from "../ShinyWrapper";
 import PortfolioSliderNew from "../Slider/PortfolioSliderNew";
+import ServiceList from "../ServiceList";
 
 export default function Home() {
   pageTitle("Home1");
@@ -82,95 +78,33 @@ export default function Home() {
       </div>
       {/* End FunFact Section */}
 
-      {/* Start Service Section */}
-      <Spacing lg="150" md="80" />
-      <Div id="service">
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading
-                title="Services we can help you with"
-                subtitle="What Can We Do"
-                btnText="See All Services"
-                btnLink="/service"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-8">
-              <Div className="row">
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-
-                <Div className="col-lg-3 col-6">
-                  <ShinyWrapper>
-                    <Card
-                      title="Mobile App Development"
-                      link="/service/service-details"
-                      src="/images/mobile.png"
-                      alt="Service"
-                    />
-                    <Spacing lg="0" md="30" />
-                  </ShinyWrapper>
-                </Div>
-
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-
-                <Div className="col-lg-3 col-6">
-                  <ShinyWrapper>
-                    <Card
-                      title="UI/UX Design"
-                      link="/service/service-details"
-                      src="/images/ui.png"
-                      alt="Service"
-                    />
-                    <Spacing lg="0" md="30" />
-                  </ShinyWrapper>
-                </Div>
-
-                <Div className="col-lg-3 col-6">
-                  <ShinyWrapper>
-                    <Card
-                      title="Web Development"
-                      link="/service/service-details"
-                      src="/images/web.png"
-                      alt="Service"
-                    />
-                    <Spacing lg="0" md="30" />
-                  </ShinyWrapper>
-                </Div>
-
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-
-                <Div className="col-lg-3 col-6">
-                  <ShinyWrapper>
-                    <Card
-                      title="Web3"
-                      link="/service/service-details"
-                      src="/images/web3.png"
-                      alt="Service"
-                    />
-                    <Spacing lg="0" md="30" />
-                  </ShinyWrapper>
-                </Div>
-
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-              </Div>
-            </Div>
-          </Div>
+      {/* Start Services Section */}
+      <Spacing lg="145" md="80" />
+      <Div className="container">
+        <Div className="col-xl-4">
+          <SectionHeading
+            title="Services we can help you with"
+            subtitle="What Can We Do"
+            btnText="See All Services"
+            btnLink="/service"
+          />
         </Div>
+        <Spacing lg="30" md="10" />
+        <ServiceList />
       </Div>
-      {/* End Service Section */}
+      {/* End Services Section */}
 
       {/* Start Portfolio Section */}
       <Spacing lg="150" md="100" />
       <Div id="client">
-        <Div className="container">
+        {/* <Div className="container">
           <SectionHeading
             title="Client Stories"
             subtitle="Latest Projects"
             variant="cs-style1 text-center"
           />
           <Spacing lg="90" md="45" />
-        </Div>
+        </Div> */}
         <PortfolioSliderNew />
         {/* <PortfolioSlider /> */}
       </Div>
