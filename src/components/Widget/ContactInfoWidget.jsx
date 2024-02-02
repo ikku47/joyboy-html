@@ -14,7 +14,7 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          050 618 9848
+          <a href="https://wa.me/971506189848">050 618 9848</a>
         </li>
         <li>
           {withIcon ? (

@@ -1,4 +1,4 @@
-@import '../../scss/default/color_variable';
+@import "../../scss/default/color_variable";
 .cs-site_header {
   position: relative;
   z-index: 101;
@@ -149,6 +149,7 @@
   }
 }
 .cs-side_header {
+  background-color: red;
   position: fixed;
   top: 0;
   right: 0px;
@@ -219,7 +220,7 @@
     bottom: 0;
     right: 0;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 100%;
@@ -246,7 +247,7 @@
   z-index: 100;
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 50%;
     height: 2px;
@@ -387,7 +388,7 @@
           > a {
             position: relative;
             &::after {
-              content: '';
+              content: "";
               display: inline-block;
               height: 8px;
               width: 8px;
@@ -533,7 +534,7 @@
 
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 50%;
@@ -617,7 +618,7 @@
       transition-delay: 0.2s;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         margin-top: -9px;
         transition-property: margin, transform;
@@ -626,7 +627,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         margin-top: 9px;
         transition-property: margin, transform;
@@ -755,4 +756,17 @@
 }
 
 @media screen and (max-width: 450px) {
+}
+
+.bottom-sheet-container {
+  background-color: rgb(30, 30, 30);
+  padding: 30px;
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.bottom-sheet-header {
+  background-color: rgb(30, 30, 30);
 }

@@ -5,6 +5,7 @@ import Newsletter from "../Widget/Newsletter";
 import "./header.scss";
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import Div from "../Div";
+import Sheet from "react-modal-sheet";
 import DropDown from "./DropDown";
 
 export default function Header({ variant }) {
@@ -21,6 +22,8 @@ export default function Header({ variant }) {
     });
   }, []);
 
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
       <header
@@ -30,6 +33,45 @@ export default function Header({ variant }) {
       >
         <Div className="cs-main_header">
           <Div className="container">
+            <Sheet isOpen={isOpen} onClose={() => setOpen(false)}>
+              <Sheet.Container>
+                <Sheet.Header className="bottom-sheet-header" />
+                <Sheet.Content className="bottom-sheet-container">
+                  <Div>
+                    <Div
+                      className="cs-side_header_overlay"
+                      onClick={() => setSideHeaderToggle(!sideHeaderToggle)}
+                    />
+                    <Div className="cs-side_header_in">
+                      <Div className="cs-side_header_shape" />
+                      <Link className="cs-site_branding" to="/">
+                        <img src="/joyboyl1.svg" alt="Logo" />
+                      </Link>
+
+                      <div style={{ height: "20px" }}></div>
+                      <Div className="cs-side_header_box">
+                        <h2 className="cs-side_header_heading">
+                          Do you have a project in your <br /> mind? Connect
+                          with us.
+                        </h2>
+                      </Div>
+
+                      <div style={{ height: "40px" }}></div>
+                      <Div className="cs-side_header_box">
+                        <ContactInfoWidget title="Contact Us" withIcon />
+                      </Div>
+
+                      <div style={{ height: "80px" }}></div>
+                      <Div className="cs-side_header_box"></Div>
+                      <Div className="cs-side_header_box">
+                        <SocialWidget />
+                      </Div>
+                    </Div>
+                  </Div>
+                </Sheet.Content>
+              </Sheet.Container>
+              <Sheet.Backdrop />
+            </Sheet>
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
@@ -229,7 +271,10 @@ export default function Header({ variant }) {
                         ? "cs-munu_toggle cs-toggle_active"
                         : "cs-munu_toggle"
                     }
-                    onClick={() => setMobileToggle(!mobileToggle)}
+                    onClick={() => {
+                      setOpen(true);
+                      // return setMobileToggle(!mobileToggle);
+                    }}
                   >
                     <span></span>
                   </span>

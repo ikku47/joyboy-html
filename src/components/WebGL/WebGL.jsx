@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Button from "../Button";
 import Div from "../Div";
 import VerticalLinks from "../VerticalLinks";
@@ -26,6 +26,7 @@ class ScriptTag extends Component {
 }
 
 function WebGLComponent(props) {
+
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0
@@ -82,6 +83,7 @@ function WebGLComponent(props) {
                 </Div>
               </Div>
             </Div>
+     
           </Div>
         </Div>
         <a href={scrollDownId} className="cs-down_btn"></a>
