@@ -65,7 +65,7 @@ export default function Home() {
         subtitle="Web2 to Web3, App Development, UI/UX Design, and AI: We've Got It All, Infused with Joy!"
         btnText="Talk to us"
         btnLink="/contact"
-        scrollDownId="#service"
+        scrollDownId="#client"
       >
         {/* Include the WebGLComponent here as the background */}
       </Hero>
@@ -162,7 +162,7 @@ export default function Home() {
 
       {/* Start Portfolio Section */}
       <Spacing lg="150" md="100" />
-      <Div>
+      <Div id="client">
         <Div className="container">
           <SectionHeading
             title="Client Stories"

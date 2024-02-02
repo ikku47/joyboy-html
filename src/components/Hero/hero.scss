@@ -450,7 +450,7 @@
     padding-top: 200px;
     min-height: 880px;
     .cs-hero_title {
-      font-size: 190px;
+      font-size: 120px;
     }
   }
   .cs-hero.cs-style3 {
@@ -654,7 +654,8 @@
 @media screen and (max-width: 575px) {
   .cs-hero.cs-style1 {
     .cs-hero_title {
-      font-size: 70px;
+      margin-top: 100px;
+      font-size: 60px;
       line-height: 70px;
       br {
         display: none;

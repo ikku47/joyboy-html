@@ -57,9 +57,9 @@ function WebGLComponent(props) {
   return (
     <div style={containerStyle}>
       <Div className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1">
+        {/* <Div className="cs-shape_1" />
         <Div className="cs-shape_1" />
-        <Div className="cs-shape_1" />
-        <Div className="cs-shape_1" />
+        <Div className="cs-shape_1" /> */}
         <Div className="container">
           <Div className="cs-hero_text">
             <h1
@@ -84,7 +84,6 @@ function WebGLComponent(props) {
             </Div>
           </Div>
         </Div>
-        <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
         <a href={scrollDownId} className="cs-down_btn"></a>
         <>
           <ScriptTag src="/dat.gui.min.js" />
