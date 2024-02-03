@@ -39,7 +39,15 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap",
+    "prepare": "husky"
+  },
+  "reactSnap": {
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
   },
   "browserslist": {
     "production": [
@@ -55,6 +63,8 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
-    "@iconify/react": "^4.0.0"
+    "@iconify/react": "^4.0.0",
+    "husky": "^9.0.10",
+    "react-snap": "^1.23.0"
   }
 }
